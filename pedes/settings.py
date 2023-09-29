@@ -25,7 +25,6 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "secret_key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DJANGO_DEBUG", "True") == "True"
-print(f"Value of DEBUG is: {DEBUG}")
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "pedes2024.org"]
 
