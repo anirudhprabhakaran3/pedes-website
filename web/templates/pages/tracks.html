@@ -5,48 +5,51 @@ Tracks
 {% endblock %}
 <div class="flex-grow flex justify-center items-center">
 {% block content %}
-<section class="bg-gray-900">
-    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <h2
-            class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-white md:text-4xl">
-            Tracks
-        </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full">
-            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-                <span class="font-medium">TT1:</span>
-                Power Electronics Components and Devices  
-            </div>
-            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-                <span class="font-medium">TT2:</span>
-                Industrial Drives and EMI
-            </div>
-            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-                <span class="font-medium">TT3:</span>
-                Transportation 
-            </div>
-            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-                <span class="font-medium">TT4:</span>
-                Control and Automation 
-            </div>
-            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-                <span class="font-medium">TT5:</span>
-                Renewable Energy Systems and Energy Storage 
-            </div>
-            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-                <span class="font-medium">TT6:</span>
-                Smart Grids & Power Quality
-            </div>
-            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-                <span class="font-medium">TT7:</span>
-                Power Engineering Educations and Issues
-            </div>
-            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-                <span class="font-medium">TT8:</span>
-                Big Data Analytics and ML Applications in Power Electronics
-            </div>
+<section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16 px-4 text-center  flex-grow flex-col justify-between ">
+    <div class="max-w-screen-xl mx-auto">
+        <h2 class="text-4xl font-extrabold mb-8">Tracks</h2>
 
-        </div>
+        <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <li class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-600">Track 1</h3>
+                <p class="text-xl font-bold mb-4">Power Electronics Components and Devices</p>
+            </li>
+        
+            <li class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-600">Track 2</h3>
+                <p class="text-xl font-bold mb-4">Industrial Drives and EMI</p>
+            </li>
+            <li class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-600">Track 3</h3>
+                <p class="text-xl font-bold mb-4">Transportation</p>
+            </li>
+            <li class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-600">Track 4</h3>
+                <p class="text-xl font-bold mb-4">Control and Automation</p>
+            </li>
+            <li class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-600">Track 5</h3>
+                <p class="text-xl font-bold mb-4">Renewable Energy Systems and Energy Storage</p>
+            </li>
+            <li class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-600">Track 6</h3>
+                <p class="text-xl font-bold mb-4">Smart Grids & Power Quality</p>
+            </li>
+            <li class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-600">Track 7</h3>
+                <p class="text-xl font-bold mb-4">Power Engineering Educations and Issues</p>
+            </li>
+            <li class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-600">Track 8</h3>
+                <p class="text-xl font-bold mb-4">Big Data Analytics and ML Applications in Power Electronics</p>
+            </li>
+        </ul>
+        
     </div>
+   
+    
+    
+    {% endblock %}
 </section>
-{% endblock %}
+
 </div>

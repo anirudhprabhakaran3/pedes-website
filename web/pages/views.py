@@ -14,5 +14,6 @@ def committee(request):
 def important_dates(request):
     return render(request, "pages/important_dates.html")
 
+
 def tracks(request):
     return render(request, "pages/tracks.html")
