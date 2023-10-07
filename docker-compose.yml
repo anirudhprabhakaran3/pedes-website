@@ -39,7 +39,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - 127.0.0.1:3000:80
+      - 3000:80
     volumes:
       - static:/web/static
       - media:/web/media
