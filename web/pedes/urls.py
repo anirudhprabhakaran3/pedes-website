@@ -22,3 +22,4 @@ urlpatterns = [
     path("", include("pages.urls")),
     path("sponsors/", include("sponsors.urls")),
 ]
+

@@ -11,12 +11,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet"/>
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen">
 
     {% include '_navbar.html' %}
 
-    {% block content %}
-    {% endblock %}
+    <div class="flex-grow">
+        {% block content %}
+        {% endblock %}
+    </div>
 
     {% include "_footer.html" %}
 
