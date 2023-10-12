@@ -1,27 +1,10 @@
-{% extends 'base.html' %} {% block title %} Home {% endblock %} {% block content
-%}
+{% extends 'base.html' %}
 
-<div
-  class="flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50"
-  role="alert"
->
-  <svg
-    class="flex-shrink-0 inline w-4 h-4 mr-3"
-    aria-hidden="true"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="currentColor"
-    viewBox="0 0 20 20"
-  >
-    <path
-      d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
-    />
-  </svg>
-  <span class="sr-only">Info</span>
-  <div>
-    <span class="font-medium">Alert!</span>
-    Paper submission deadline has been extended to 1st April, 2024.
-  </div>
-</div>
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
 
 <section class="bg-white">
   <div
@@ -1008,84 +991,73 @@ c0 288 -7 353 -43 406 -41 60 -70 74 -160 77 -61 2 -90 -2 -112 -14z" />
 </section>
 
 <section class="bg-gray-900">
-  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-    <h2
-      class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-white md:text-4xl"
-    >
-      Tracks
-    </h2>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full">
-      <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-        <span class="font-medium">TT1:</span>
-        Power Converters, Devices, EMI/EMC, Packaging
-      </div>
-      <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-        <span class="font-medium">TT2:</span>
-        Electric Machines and Industrial Drives
-      </div>
-      <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-        <span class="font-medium">TT3:</span>
-        Renewable Energy and Smart Grids
-      </div>
-      <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
-        <span class="font-medium">TT4:</span>
-        Transportation Electrification and Energy Storage
-      </div>
+    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+        <h2
+            class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-white md:text-4xl">
+            Tracks
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full">
+            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
+                <span class="font-medium">TT1:</span>
+                Power Electronics Components and Devices  
+            </div>
+            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
+                <span class="font-medium">TT2:</span>
+                Industrial Drives and EMI
+            </div>
+            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
+                <span class="font-medium">TT3:</span>
+                Transportation 
+            </div>
+            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
+                <span class="font-medium">TT4:</span>
+                Control and Automation 
+            </div>
+            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
+                <span class="font-medium">TT5:</span>
+                Renewable Energy Systems and Energy Storage 
+            </div>
+            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
+                <span class="font-medium">TT6:</span>
+                Smart Grids & Power Quality
+            </div>
+            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
+                <span class="font-medium">TT7:</span>
+                Power Engineering Educations and Issues
+            </div>
+            <div class="p-4 text-sm rounded-lg bg-gray-800 text-gray-300">
+                <span class="font-medium">TT8:</span>
+                Big Data Analytics and ML Applications in Power Electronics
+            </div>
+
+        </div>
     </div>
-  </div>
 </section>
 
 <section>
-  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-    <h2 class="text-4xl font-extrabold">Timeline</h2>
+    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+        <h2 class="text-4xl font-extrabold text-center">Timeline</h2>
 
-    <ol class="relative border-l border-gray-200 mx-5 my-5">
-      <li class="mb-10 ml-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
-        ></div>
-        <h3 class="text-lg font-semibold text-gray-900">January 1st, 2024</h3>
-        <p class="text-base font-normal text-gray-500">
-          Paper Submission opens.
-        </p>
-      </li>
-      <li class="mb-10 ml-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
-        ></div>
-        <h3 class="text-lg font-semibold text-gray-900">April 1st, 2024</h3>
-        <p class="text-base font-normal text-gray-500">
-          Paper Submission closes.
-        </p>
-      </li>
-      <li class="mb-10 ml-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
-        ></div>
-        <h3 class="text-lg font-semibold text-gray-900">July 1st, 2024</h3>
-        <p class="text-base font-normal text-gray-500">
-          Notification of Acceptance.
-        </p>
-      </li>
-      <li class="mb-10 ml-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
-        ></div>
-        <h3 class="text-lg font-semibold text-gray-900">August 1st, 2024</h3>
-        <p class="text-base font-normal text-gray-500">
-          Camera Ready Paper Submission Deadline.
-        </p>
-      </li>
-      <li class="mb-10 ml-4">
-        <div
-          class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
-        ></div>
-        <h3 class="text-lg font-semibold text-gray-900">October 1st, 2024</h3>
-        <p class="text-base font-normal text-gray-500">
-          Registration Deadline.
-        </p>
-      </li>
-    </ol>
-  </div>
+        <ol class="relative border-l border-gray-200">
+            <li class="mb-10 ml-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400">15th February 2024</time>
+                <h3 class="text-lg font-semibold text-gray-900">Submission of Digest</h3>
+                
+            </li>
+            <li class="mb-10 ml-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400">15th September 2024</time>
+                <h3 class="text-lg font-semibold text-gray-900">Acceptance Notification of Digest</h3>
+                <p class="text-base font-normal text-gray-500">Aimed number of publications: 500+</p>
+            </li>
+            <li class="ml-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400">18th - 21st December 2024</time>
+                <h3 class="text-lg font-semibold text-gray-900">Conference Dates</h3>
+            </li>
+        </ol>
+    </div>
 </section>
+
 {% endblock %}
