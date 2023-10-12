@@ -17,3 +17,6 @@ def important_dates(request):
 
 def tracks(request):
     return render(request, "pages/tracks.html")
+
+def contact(request):
+    return render(request, "pages/contact.html")
