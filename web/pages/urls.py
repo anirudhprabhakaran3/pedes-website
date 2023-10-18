@@ -11,6 +11,3 @@ urlpatterns = [
     path("contact/", contact, name="contact"),
     path("about/", about, name="about"),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
