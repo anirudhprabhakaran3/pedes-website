@@ -23,3 +23,6 @@ def contact(request):
 
 def about(request):
     return render(request,"pages/about.html")
+
+def call_for_papers(request):
+    return render(request,"pages/call_for_papers.html")
