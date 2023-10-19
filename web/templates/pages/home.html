@@ -6,33 +6,302 @@ Home
 {% load static %}
 {% block content %}
 <style>
-  .relative.h-56.md\:h-96 {
-    
-    @media (min-width: 768px) {
-      .relative.h-56.md\:h-96 {
-          height: 80vh;
-      }
+	.relative.h-56.md\:h-96 {
+
+		@media (min-width: 768px) {
+			.relative.h-56.md\:h-96 {
+				height: 80vh;
+			}
+		}
+
+		@media (min-width: 1024px) {
+			.relative.h-56.md\:h-96 {
+				height: 90vh;
+			}
+		}
+	}
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.logo {
+    width: 200px;
+    height: 200px;
   }
-  
-  @media (min-width: 1024px) {
-      .relative.h-56.md\:h-96 {
-          height: 90vh;
-      }
+
+  @media (max-width: 1024px) {
+    .logo {
+      width: 100px; /* Set your desired width for smaller screens */
+      height: 100px; /* Set your desired height for smaller screens */
+	  left: 5;
+    }
   }
-}
-  .text-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-   }
 </style>
 
 <section class="bg-white">
 	<div id="default-carousel" class="relative w-full h-400" data-carousel="slide">
 		<!-- Carousel wrapper -->
 		<div class="relative h-56 overflow-hidden  md:h-96" style="height: 80vh; position: relative;">
-
+			<a href="https://www.ieee.org/" target="_blank">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200" height="200"
+					class="absolute top-0 left-10 z-40 logo" viewBox="0 0 1200 427" enable-background="new 0 0 1200 427"
+					xml:space="preserve">
+					<path fill="#FEFEFF" opacity="1.000000" stroke="none" d="
+M739.000000,428.000000 
+	C494.166718,428.000000 249.833420,427.989960 5.500171,428.093353 
+	C1.751260,428.094940 0.902848,427.249847 0.905854,423.500061 
+	C1.017548,284.166809 1.017528,144.833496 0.905916,5.500283 
+	C0.902913,1.751295 1.750208,0.906047 5.499814,0.906984 
+	C402.499725,1.006189 799.499695,1.006179 1196.499634,0.907094 
+	C1200.247681,0.906158 1201.097290,1.749188 1201.094238,5.499651 
+	C1200.982422,144.832870 1200.982544,284.166199 1201.093994,423.499451 
+	C1201.097046,427.247742 1200.251099,428.096771 1196.500366,428.094055 
+	C1044.166992,427.983917 891.833496,428.000000 739.000000,428.000000 
+z" />
+					<path fill="#0253A1" opacity="1.000000" stroke="none" d="
+M611.000000,193.944595 
+	C633.665161,193.944595 655.831055,194.036530 677.994751,193.854370 
+	C681.699097,193.823929 682.849304,194.716370 682.780029,198.514801 
+	C682.546204,211.343048 682.521301,224.181351 682.777222,237.008606 
+	C682.857727,241.041901 681.607300,241.978577 677.716919,241.960785 
+	C644.553223,241.809036 611.388245,241.940979 578.224548,241.786606 
+	C574.219299,241.767960 572.841858,242.571823 572.941589,246.912033 
+	C573.259277,260.737061 573.281433,274.579712 572.931274,288.403198 
+	C572.814087,293.028778 574.317444,293.823090 578.547241,293.803467 
+	C614.210754,293.638062 649.875305,293.709198 685.539551,293.709290 
+	C692.003418,293.709290 692.003601,293.709381 692.003418,300.417938 
+	C692.003113,312.750427 691.894531,325.084534 692.077393,337.414276 
+	C692.123657,340.533264 691.192505,341.304718 688.161499,341.300598 
+	C628.332336,341.219330 568.502991,341.213409 508.673950,341.321198 
+	C505.388062,341.327118 504.917480,340.172821 504.919952,337.294891 
+	C504.987823,258.133667 504.998505,178.972351 504.890106,99.811211 
+	C504.885315,96.307312 506.130951,95.824448 509.172485,95.828262 
+	C568.668396,95.902824 628.164368,95.911911 687.660156,95.799126 
+	C691.124023,95.792557 692.151672,96.606094 692.090881,100.157745 
+	C691.868652,113.153046 691.814514,126.158638 692.109680,139.150970 
+	C692.201233,143.183395 690.740479,143.700485 687.258911,143.689728 
+	C651.095032,143.578033 614.930359,143.687653 578.766846,143.534363 
+	C574.439941,143.516022 572.786926,144.329071 572.924744,149.151047 
+	C573.305603,162.472580 573.234680,175.815948 572.949768,189.142288 
+	C572.861877,193.252121 574.199524,194.113678 578.004578,194.029572 
+	C588.831726,193.790283 599.667603,193.944977 611.000000,193.944595 
+z" />
+					<path fill="#0253A1" opacity="1.000000" stroke="none" d="
+M917.009277,329.982178 
+	C917.009277,341.241577 917.009277,341.241119 906.081787,341.241608 
+	C849.257446,341.244141 792.432922,341.195892 735.608948,341.348297 
+	C731.153564,341.360229 729.856201,340.374390 729.865967,335.697113 
+	C730.029541,257.543091 730.020935,179.388565 729.877808,101.234482 
+	C729.869873,96.893410 730.810242,95.743813 735.287354,95.757126 
+	C794.110840,95.932152 852.935242,95.939980 911.758728,95.753860 
+	C916.363403,95.739288 917.206726,97.071823 917.110352,101.299828 
+	C916.825806,113.791412 916.816284,126.298080 917.112671,138.789047 
+	C917.209839,142.885666 915.901794,143.713776 912.083557,143.699692 
+	C875.923096,143.566254 839.761353,143.716644 803.601624,143.505402 
+	C798.907166,143.477966 797.857666,144.850204 797.957703,149.305191 
+	C798.253113,162.463165 798.231323,175.635422 797.963867,188.794586 
+	C797.880432,192.898590 798.931946,194.067169 803.133484,194.044189 
+	C836.127319,193.863800 869.123230,194.049454 902.116516,193.825821 
+	C906.840454,193.793808 907.885315,195.171158 907.769714,199.653610 
+	C907.451843,211.976883 907.493225,224.316833 907.742249,236.643112 
+	C907.824219,240.701981 906.829712,242.000702 902.550232,241.976654 
+	C869.556458,241.791290 836.560486,241.977692 803.567139,241.758194 
+	C798.867065,241.726913 797.847168,243.113052 797.945496,247.566437 
+	C798.246948,261.224365 798.214844,274.895721 797.973389,288.555878 
+	C797.902100,292.590759 798.831055,293.838715 803.104797,293.816406 
+	C839.264771,293.627625 875.426575,293.785858 911.586670,293.606812 
+	C915.865356,293.585632 917.307800,294.428131 917.131531,298.994080 
+	C916.739624,309.144073 917.009277,319.319611 917.009277,329.982178 
+z" />
+					<path fill="#0253A1" opacity="1.000000" stroke="none" d="
+M1023.063904,263.000122 
+	C1023.063293,271.830994 1023.417725,280.182922 1022.926270,288.484741 
+	C1022.640198,293.317780 1024.526978,293.806488 1028.594727,293.790466 
+	C1064.250244,293.649963 1099.906738,293.681183 1135.562866,293.731354 
+	C1143.508179,293.742523 1142.182129,292.845428 1142.226440,300.245087 
+	C1142.299316,312.407745 1142.143311,324.572662 1142.319214,336.733215 
+	C1142.366821,340.017670 1141.779053,341.340942 1138.050659,341.333191 
+	C1078.401855,341.209167 1018.752563,341.215607 959.103699,341.306427 
+	C955.885193,341.311340 954.895386,340.556305 954.899475,337.205536 
+	C954.996399,258.062256 954.992065,178.918839 954.919556,99.775513 
+	C954.916870,96.845001 955.461731,95.792824 958.699829,95.798569 
+	C1018.515381,95.904800 1078.331177,95.901337 1138.146729,95.810905 
+	C1141.375122,95.806030 1142.370972,96.636032 1142.322754,99.943993 
+	C1142.135620,112.770767 1142.068848,125.606110 1142.359131,138.429153 
+	C1142.454224,142.624207 1141.256592,143.720963 1137.113159,143.703445 
+	C1100.957764,143.550598 1064.801025,143.705429 1028.646118,143.513977 
+	C1024.036987,143.489563 1022.842712,144.755569 1022.951843,149.295547 
+	C1023.268005,162.450714 1023.230530,175.621857 1022.962769,188.779221 
+	C1022.878967,192.893158 1023.928650,194.068802 1028.149414,194.045563 
+	C1061.305176,193.863083 1094.463013,194.021988 1127.619019,193.847061 
+	C1131.815430,193.824905 1132.897949,194.988647 1132.799072,199.115646 
+	C1132.507935,211.271912 1132.458862,223.445450 1132.788330,235.599396 
+	C1132.919434,240.435028 1131.949463,242.068604 1126.623291,242.021103 
+	C1093.802246,241.728317 1060.976929,241.949768 1028.154053,241.779343 
+	C1024.012329,241.757828 1022.641541,242.827393 1022.950623,247.011627 
+	C1023.330200,252.149216 1023.055664,257.335114 1023.063904,263.000122 
+z" />
+					<path fill="#0253A1" opacity="1.000000" stroke="none" d="
+M401.198425,299.999939 
+	C401.198425,233.546188 401.262970,167.592255 401.069244,101.639061 
+	C401.054596,96.651817 402.474091,95.695702 407.133728,95.760696 
+	C426.449707,96.030167 445.772095,95.934593 465.091064,95.810112 
+	C468.224976,95.789909 469.347351,96.499306 469.343079,99.897308 
+	C469.243622,179.008377 469.248779,258.119598 469.315369,337.230713 
+	C469.317841,340.106171 468.838013,341.337006 465.566132,341.313538 
+	C445.414642,341.168884 425.260834,341.152557 405.109741,341.323517 
+	C401.578644,341.353485 401.098419,340.010956 401.135986,336.973907 
+	C401.286255,324.817535 401.198242,312.658203 401.198425,299.999939 
+z" />
+					<path fill="#0654A0" opacity="1.000000" stroke="none" d="
+M218.969131,350.985718 
+	C213.893570,357.822418 208.671982,364.140076 204.224838,370.962585 
+	C197.942291,380.600891 189.592331,379.011261 183.644226,369.944611 
+	C168.446716,346.779144 150.591446,325.668274 131.561096,305.543152 
+	C103.077454,275.420868 71.775490,248.590561 37.793213,224.863586 
+	C27.946133,217.988190 27.644308,211.489029 37.541786,204.596741 
+	C67.154556,183.975357 94.671211,160.916489 120.073616,135.291855 
+	C143.580078,111.579720 164.792114,85.937820 184.764771,59.226986 
+	C191.404617,50.347054 198.854385,50.565178 205.238724,59.581753 
+	C243.895172,114.176247 290.339874,161.033554 344.800049,199.910629 
+	C347.369995,201.745255 350.082153,203.384171 352.758911,205.065063 
+	C360.804535,210.117386 361.247559,219.524216 353.396851,224.723709 
+	C301.496216,259.097382 257.769714,302.158508 218.969131,350.985718 
+z" />
+					<path fill="#145CA2" opacity="1.000000" stroke="none" d="
+M250.314453,361.570496 
+	C242.681900,348.882141 248.370743,335.333435 261.718353,333.576630 
+	C269.784088,332.515076 277.127716,336.451477 280.063049,343.409973 
+	C283.151001,350.730377 281.117188,359.544586 275.258484,364.231995 
+	C269.178955,369.096222 259.718872,369.265625 253.450562,364.567261 
+	C252.396942,363.777496 251.508087,362.767914 250.314453,361.570496 
+z" />
+					<path fill="#F2F5F9" opacity="1.000000" stroke="none" d="
+M282.556427,264.556213 
+	C261.992859,286.441833 240.885971,307.225525 217.017395,324.998749 
+	C212.886703,328.074554 208.638123,331.057190 204.166565,333.593781 
+	C198.417175,336.855255 192.596130,336.827057 186.646378,333.341125 
+	C176.680786,327.502228 167.532578,320.597565 158.870361,313.026520 
+	C129.990005,287.784088 101.965347,261.720001 79.665070,230.176468 
+	C71.013069,217.938263 70.750198,212.321930 79.639656,199.986221 
+	C97.345871,175.415710 118.574776,154.042343 140.649780,133.446304 
+	C153.575027,121.387039 167.272705,110.309578 181.412659,99.711639 
+	C189.303421,93.797478 197.217575,93.475227 205.744232,97.501862 
+	C213.986816,101.394341 220.607651,107.587151 227.528275,113.283417 
+	C258.922119,139.123276 286.631622,168.427292 310.471954,201.423508 
+	C316.913361,210.338715 317.825928,218.609650 311.765839,228.053589 
+	C303.350250,241.168213 292.895233,252.573044 282.556427,264.556213 
+z" />
+					<path fill="#E8F2F7" opacity="1.000000" stroke="none" d="
+M271.760223,359.723083 
+	C269.993347,363.705078 266.336304,364.095490 262.696655,363.641815 
+	C255.104492,362.695435 250.423676,355.191284 252.249969,347.363953 
+	C253.949829,340.078461 260.860382,336.004364 267.820435,338.184448 
+	C274.600372,340.308075 278.134796,348.530884 275.382263,355.776917 
+	C274.788025,357.341309 274.039215,358.805908 272.355957,359.931030 
+	C267.232910,355.883545 266.850464,354.396118 269.536957,349.200439 
+	C270.997467,346.375854 270.305878,344.460693 267.463837,343.185150 
+	C261.540833,340.526825 258.311951,342.569061 258.328888,349.072021 
+	C258.335754,351.702179 257.985992,354.362946 258.633881,356.944458 
+	C259.396240,357.124786 259.437622,356.568878 259.563446,356.170898 
+	C260.083527,354.525879 259.550812,352.112335 261.921997,351.724823 
+	C264.103149,351.368378 265.086243,353.328827 265.857513,354.950165 
+	C267.029022,357.412781 269.062836,358.663544 271.760223,359.723083 
+z" />
+					<path fill="#0453A1" opacity="1.000000" stroke="none" d="
+M158.305115,127.288208 
+	C167.103836,119.853294 175.940109,113.046715 185.045563,106.590668 
+	C192.495377,101.308525 198.417938,101.131828 206.230728,106.337639 
+	C216.227112,112.998436 225.328735,120.821556 234.373596,128.693329 
+	C260.083435,151.068787 283.730347,175.363205 303.453735,203.283844 
+	C310.334381,213.024124 310.430328,218.472183 303.439972,228.238663 
+	C285.121033,253.832657 262.939972,275.885651 239.981384,297.231018 
+	C230.077713,306.438782 219.283966,314.522156 208.512909,322.625305 
+	C198.624588,330.064331 192.210770,329.834045 182.345627,322.414001 
+	C146.742935,295.635529 115.230858,264.694855 87.879387,229.527481 
+	C79.260292,218.445435 79.037628,212.338364 87.100182,201.788788 
+	C108.010941,174.427811 131.736237,149.742126 158.305115,127.288208 
+z" />
+					<path fill="#1A60A5" opacity="1.000000" stroke="none" d="
+M272.051605,359.887024 
+	C269.626648,359.968445 269.626648,359.968445 262.175537,352.289581 
+	C260.350189,353.905029 261.519714,356.019867 261.273560,357.860321 
+	C261.095093,359.194611 260.782776,360.044891 259.235992,360.022278 
+	C257.759644,360.000641 257.152802,359.283905 257.154907,357.880035 
+	C257.162079,353.072540 257.150940,348.265045 257.172089,343.457642 
+	C257.174194,342.980103 257.210632,342.405304 257.467316,342.042938 
+	C258.665741,340.351044 268.319183,340.919678 270.220154,343.010620 
+	C272.712311,345.751770 272.959167,348.867279 269.668091,351.075439 
+	C267.785156,352.338806 268.206146,353.181458 269.064423,354.572998 
+	C270.020233,356.122620 270.869629,357.737915 271.879700,359.643127 
+	C271.994110,359.961639 272.025818,359.905975 272.051605,359.887024 
+z" />
+					<path fill="#F6F8FB" opacity="1.000000" stroke="none" d="
+M197.994110,233.490662 
+	C210.573471,233.439148 222.341263,231.454895 233.854828,227.832260 
+	C238.047424,226.513107 241.832001,224.461075 245.135651,221.605591 
+	C248.430984,218.757263 249.249878,215.234512 247.179764,211.299683 
+	C244.444946,206.101410 235.749405,201.894379 230.191971,203.632568 
+	C225.881638,204.980713 223.811478,204.039764 222.902924,199.611038 
+	C222.346298,196.897690 221.144012,194.316803 219.978333,190.943207 
+	C225.304733,192.324539 230.049591,193.613892 234.825165,194.777115 
+	C239.656708,195.953979 244.518646,197.005997 250.204544,198.303833 
+	C248.043869,199.087616 246.678024,199.583084 244.591858,200.339844 
+	C247.271027,202.132660 249.563797,203.524704 251.702652,205.122742 
+	C261.023468,212.086823 260.968323,220.724716 251.410309,227.460983 
+	C243.187042,233.256561 233.600113,235.594101 223.914261,237.370239 
+	C195.358368,242.606628 167.244888,241.602417 139.919800,230.852692 
+	C135.408951,229.078125 131.137222,226.802979 127.644394,223.356796 
+	C122.365807,218.148804 121.637024,212.088974 126.420311,206.394714 
+	C134.235809,197.090820 144.980743,192.665787 156.499466,189.905899 
+	C157.386841,189.693268 158.608826,189.835434 159.369705,190.306381 
+	C164.143784,193.261200 168.831177,196.356064 174.033524,199.718933 
+	C169.787689,201.011642 166.111313,202.018555 162.513641,203.254501 
+	C157.902344,204.838684 153.629028,207.075699 150.364807,210.827515 
+	C146.047516,215.789764 146.414200,219.751602 151.677109,223.837448 
+	C156.125046,227.290558 161.496689,228.665588 166.824631,230.001724 
+	C176.886261,232.524979 187.122055,233.647507 197.994110,233.490662 
+z" />
+					<path fill="#F9FAFC" opacity="1.000000" stroke="none" d="
+M194.979126,230.165527 
+	C184.554916,229.846878 186.087265,231.231415 186.486206,221.548508 
+	C186.993744,209.230484 187.398514,196.904785 188.179535,184.603470 
+	C188.424545,180.744507 187.273727,179.416092 183.560059,179.922287 
+	C182.251205,180.100693 180.888657,179.851639 179.566223,179.970856 
+	C177.114868,180.191895 176.175568,179.484070 177.086060,176.895340 
+	C182.877884,160.427994 188.606384,143.938400 194.561356,126.866661 
+	C201.013794,144.579346 207.266937,161.745010 213.896866,179.944977 
+	C210.313782,179.944977 207.247696,180.116501 204.209747,179.897568 
+	C201.063644,179.670853 200.265625,180.824005 200.430481,183.926544 
+	C201.128830,197.069046 201.577606,210.225021 202.087219,223.377258 
+	C202.343811,229.999329 202.314468,230.000473 194.979126,230.165527 
+z" />
+					<path fill="#F9FAFC" opacity="1.000000" stroke="none" d="
+M185.075745,259.016357 
+	C185.304352,254.372574 185.618774,250.223389 185.687592,246.070114 
+	C185.723602,243.896881 186.500275,243.032684 188.665192,243.330627 
+	C189.979401,243.511490 191.315872,243.561539 192.644440,243.601944 
+	C203.145813,243.921555 203.197632,243.914047 203.701996,254.591537 
+	C204.258957,266.382751 204.616302,278.184143 205.267410,289.969666 
+	C205.437408,293.047119 204.767853,294.521057 201.420334,294.647186 
+	C196.252853,294.841888 191.127319,294.516327 185.980484,294.242676 
+	C182.883804,294.078033 183.689545,292.102020 183.758118,290.406891 
+	C184.174744,280.106964 184.622360,269.808319 185.075745,259.016357 
+z" />
+					<path fill="#DEECF5" opacity="1.000000" stroke="none" d="
+M266.515137,348.384888 
+	C265.706512,348.745667 265.220490,348.900879 264.735687,348.897064 
+	C263.160461,348.884674 261.227325,349.448914 261.219971,346.769531 
+	C261.214844,344.902527 262.394287,344.620483 263.850708,344.697083 
+	C265.993134,344.809753 268.092957,344.999725 266.515137,348.384888 
+z" />
+				</svg>
+			</a>
 			<!-- Item 1 -->
 			<div class="hidden duration-700 ease-in-out" data-carousel-item>
 				<img src="{% static 'img/UAV-Workshop-2.jpg' %}" style="width:100% ;height:100%" alt="...">
@@ -149,7 +418,7 @@ Home
 			</div>
 			<!-- Item 6 -->
 			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="{% static 'img/NITK-Vistas.jpg' %}" class="absolute block w-full h-full object-cover"
+				<img src="{% static 'img/NITK - Vistas-28.jpg' %}" class="absolute block w-full h-full object-cover"
 					alt="...">
 				<div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
 					<!-- <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
@@ -183,6 +452,8 @@ Home
 				data-carousel-slide-to="3"></button>
 			<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
 				data-carousel-slide-to="4"></button>
+			<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6"
+				data-carousel-slide-to="5"></button>
 		</div>
 		<!-- Slider controls -->
 		<!-- text-over -->
@@ -243,10 +514,11 @@ Home
 </section>
 
 <section class="bg-gray-1 ">
-  <div class="py-8 lg:py-2 mx-auto max-w-screen-xl px-4 mt-8">
-    <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-4xl font-helvetica">
-      Technical Sponsors
-    </h2>
+	<div class="py-8 lg:py-2 mx-auto max-w-screen-xl px-4 mt-8">
+		<h2
+			class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-4xl font-helvetica">
+			Technical Sponsors
+		</h2>
 		<div class="flex flex-wrap justify-between">
 			<div class="w-1/2 sm:w-1/4 md:w-1/3 lg:w-1/6 p-4">
 				<a href="https://ias.ieee.org/" target="_blank"
@@ -18073,135 +18345,141 @@ z" />
 
 
 <section id="about">
-    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 text-justify">
-        <h3 class="text-4xl font-extrabold font-helvetica">About PEDES</h3>
-        <p class="my-6 text-xl text-gray-700 font-helvetica">
-            <span class="font-extrabold my-3">
-                IEEE Power Electronics, Drives and Energy Systems (PEDES)
-            </span>
-            <br />
-            IEEE PEDES 2024 will be held at National Institute of Technology Karnataka
-            (NITK) Surathkal, Mangaluru from 18th -21st December 2024. IEEE PEDES is a
-            biennial conference sponsored by IEEE Industry Applications Society and
-            technically co-sponsored by IEEE Power Electronics Society, Industrial
-            Electronics Society, and Power & Energy Society. The goal of PEDES is to
-            provide a platform for conference, exhibition and tutorial on selected
-            topics of contemporary interest. The conference provides a unique forum
-            for the exchange of knowledge and information among the professionals
-            across the globe in the area of power electronics, drives and energy
-            system subjects which have greater significance owing to the emphasis on
-            energy affected by the climate change. The conference aims at bringing
-            together the users and researchers of electrical energy conversion systems
-            and sub-systems with the emphasis on technical content of the papers.
-        </p>
-        <h3 class="text-4xl font-extrabold font-helvetica">About NITK</h3>
-        <p class="my-6 text-xl text-gray-700 font-helvetica">
-            <span class="my-3 font-extrabold">
-                National Institute of Technology Karnataka, Surathkal
-            </span>
-            is a premier Institution engaged in imparting quality technological
-            education and providing support to research and development activities.
-            NITK is recognized as an institute of national importance by an act of
-            parliament. NITK has carved a niche for itself among the best technical
-            institutes in India. NITK offers 9 UG, 26 PG programs and PhD programs.
-            <br /><br>
+	<div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 text-justify">
+		<h3 class="text-4xl font-extrabold font-helvetica">About PEDES</h3>
+		<p class="my-6 text-xl text-gray-700 font-helvetica">
+			<span class="font-extrabold my-3">
+				IEEE Power Electronics, Drives and Energy Systems (PEDES)
+			</span>
+			<br />
+			IEEE PEDES 2024 will be held at National Institute of Technology Karnataka
+			(NITK) Surathkal, Mangaluru from 18th -21st December 2024. IEEE PEDES is a
+			biennial conference sponsored by IEEE Industry Applications Society and
+			technically co-sponsored by IEEE Power Electronics Society, Industrial
+			Electronics Society, and Power & Energy Society. The goal of PEDES is to
+			provide a platform for conference, exhibition and tutorial on selected
+			topics of contemporary interest. The conference provides a unique forum
+			for the exchange of knowledge and information among the professionals
+			across the globe in the area of power electronics, drives and energy
+			system subjects which have greater significance owing to the emphasis on
+			energy affected by the climate change. The conference aims at bringing
+			together the users and researchers of electrical energy conversion systems
+			and sub-systems with the emphasis on technical content of the papers.
+		</p>
+		<h3 class="text-4xl font-extrabold font-helvetica">About NITK</h3>
+		<p class="my-6 text-xl text-gray-700 font-helvetica">
+			<span class="my-3 font-extrabold">
+				National Institute of Technology Karnataka, Surathkal
+			</span>
+			is a premier Institution engaged in imparting quality technological
+			education and providing support to research and development activities.
+			NITK is recognized as an institute of national importance by an act of
+			parliament. NITK has carved a niche for itself among the best technical
+			institutes in India. NITK offers 9 UG, 26 PG programs and PhD programs.
+			<br /><br>
 			<span class="my-3 font-extrabold block">
 				Department of Electrical & Electronics Engineering
 			</span>
-            The Department of Electrical and Electronics Engineering strives to be a
-            center of excellence in education, training and research, producing high
-            quality engineers and researchers. In this endeavour, the department will
-            continually develop knowledge and quality of staff, upgrade and create new
-            laboratory facilities, revise the teaching program, acquire adequate new
-            equipment to keep abreast, contribute and progress in the emerging
-            technologies and committed for rendering the best service to the society.
-            The faculty of the department has been involved in several research
-            projects in cutting edge technologies and publications in many
-            international journals and conferences. The department also undertakes
-            many consultancy projects from industry and other organisations.
-        </p>
-    </div>
+			The Department of Electrical and Electronics Engineering strives to be a
+			center of excellence in education, training and research, producing high
+			quality engineers and researchers. In this endeavour, the department will
+			continually develop knowledge and quality of staff, upgrade and create new
+			laboratory facilities, revise the teaching program, acquire adequate new
+			equipment to keep abreast, contribute and progress in the emerging
+			technologies and committed for rendering the best service to the society.
+			The faculty of the department has been involved in several research
+			projects in cutting edge technologies and publications in many
+			international journals and conferences. The department also undertakes
+			many consultancy projects from industry and other organisations.
+		</p>
+	</div>
 </section>
 
 
-  
+
 
 
 
 <section class="bg-white">
-  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-      <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-4xl font-helvetica">
-          Tracks
-      </h2>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full">
-          <div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
-              <span class="font-medium">TT1:</span><br>
-              <span class="font-bold text-lg">Power Converters, Devices, EMI/EMC 
-				and Packaging</span>
-          </div>
-          <div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
-              <span class="font-medium">TT2:</span><br>
-              <span class="font-bold text-lg">Electrical Machines and Industrial 
-				Drives</span>
-          </div>
-          <div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
-              <span class="font-medium">TT3:</span><br>
-              <span class="font-bold text-lg">Transportation</span>
-          </div>
-          <div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
-              <span class="font-medium">TT4:</span><br>
-              <span class="font-bold text-lg">Control and Automation</span>
-          </div>
-          <div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
-              <span class="font-medium">TT5:</span><br>
-              <span class="font-bold text-lg">Renewable Energy Systems and Energy Storage</span>
-          </div>
-          <div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
-              <span class="font-medium">TT6:</span><br>
-              <span class="font-bold text-lg">Smart Grids & Power Quality</span>
-          </div>
-          <div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
-              <span class="font-medium">TT7:</span><br>
-              <span class="font-bold text-lg">Power Engineering Educations and Issues</span>
-          </div>
-          <div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
-              <span class="font-medium">TT8:</span><br>
-              <span class="font-bold text-lg">Applications of AI and ML Techniques to
-				Power Electronics</span>
-          </div>
-      </div>
-  </div>
+	<div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+		<h2
+			class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 md:text-4xl font-helvetica">
+			Tracks
+		</h2>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full">
+			<div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
+				<span class="font-medium">TT1:</span><br>
+				<span class="font-bold text-lg">Power Converters, Devices, EMI/EMC
+					and Packaging</span>
+			</div>
+			<div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
+				<span class="font-medium">TT2:</span><br>
+				<span class="font-bold text-lg">Electrical Machines and Industrial
+					Drives</span>
+			</div>
+			<div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
+				<span class="font-medium">TT3:</span><br>
+				<span class="font-bold text-lg">Transportation</span>
+			</div>
+			<div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
+				<span class="font-medium">TT4:</span><br>
+				<span class="font-bold text-lg">Control and Automation</span>
+			</div>
+			<div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
+				<span class="font-medium">TT5:</span><br>
+				<span class="font-bold text-lg">Renewable Energy Systems and Energy Storage</span>
+			</div>
+			<div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
+				<span class="font-medium">TT6:</span><br>
+				<span class="font-bold text-lg">Smart Grids & Power Quality</span>
+			</div>
+			<div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
+				<span class="font-medium">TT7:</span><br>
+				<span class="font-bold text-lg">Power Engineering Educations and Issues</span>
+			</div>
+			<div class="p-4 text-sm rounded-lg bg-white text-gray-900 shadow-md">
+				<span class="font-medium">TT8:</span><br>
+				<span class="font-bold text-lg">Applications of AI and ML Techniques to
+					Power Electronics</span>
+			</div>
+		</div>
+	</div>
 </section>
 
 
 
 <section>
-  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-    <h2 class="text-4xl font-extrabold text-center mb-8">Timeline</h2>
+	<div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+		<h2 class="text-4xl font-extrabold text-center mb-8">Timeline</h2>
 
-	<ol class="relative border-l border-gray-200">
-		<li class="mb-10 ml-4">
-		  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-		  <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15<sup>th</sup> February 2024</time>
-		  <h3 class="text-base font-normal text-gray-900 font-helvetica">Opening date of submission of digest</h3>
-		</li>
-		<li class="mb-10 ml-4">
-		  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-		  <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15<sup>th</sup> August 2024</time>
-		  <h3 class="text-base font-normal text-gray-900 font-helvetica">Acceptance Notification of Digest</h3>
-		</li>
-		<li class="mb-10 ml-4">
-		  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-		  <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">1<sup>st</sup> September 2024</time>
-		  <h3 class="text-base font-normal text-gray-900 font-helvetica">Submission of Final Manuscript and Copyright Form</h3>
-		</li>
-		<li class="ml-4">
-		  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-		  <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">18<sup>th</sup> - 21<sup>st</sup> December 2024</time>
-		  <h3 class="text-base font-normal text-gray-900 font-helvetica">Conference Dates</h3>
-		</li>
-	  </ol>	  
-  </div>
+		<ol class="relative border-l border-gray-200">
+			<li class="mb-10 ml-4">
+				<div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+				<time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15<sup>th</sup> February
+					2024</time>
+				<h3 class="text-base font-normal text-gray-900 font-helvetica">Opening date of submission of digest</h3>
+			</li>
+			<li class="mb-10 ml-4">
+				<div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+				<time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15<sup>th</sup> August
+					2024</time>
+				<h3 class="text-base font-normal text-gray-900 font-helvetica">Acceptance Notification of Digest</h3>
+			</li>
+			<li class="mb-10 ml-4">
+				<div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+				<time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">1<sup>st</sup> September
+					2024</time>
+				<h3 class="text-base font-normal text-gray-900 font-helvetica">Submission of Final Manuscript and
+					Copyright Form</h3>
+			</li>
+			<li class="ml-4">
+				<div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+				<time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">18<sup>th</sup> -
+					21<sup>st</sup> December 2024</time>
+				<h3 class="text-base font-normal text-gray-900 font-helvetica">Conference Dates</h3>
+			</li>
+		</ol>
+	</div>
 </section>
 
 
