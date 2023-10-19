@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+<div class="my-5 mx-auto w-11/12">
+    <h1
+        class="my-5 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl">
+        About Us</h1>
+
+    <div class="my-8">
+        <h2 class="my-2 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl">About
+            NITK</h2>
+        <div class="flex flex-col md:flex-row">
+            <div class="flex items-center md:w-2/3 p-8">
+                <p class="text-justify">
+                    National Institute of Technology Karnataka, Surathkal is located in Mangalore City, Karnataka State,
+                    India. The Institute was established as Karnataka Regional Engineering College (KREC) in 1960, and
+                    upgraded as National Institute of Technology Karnataka (NITK) in 2002. Mangalore is the headquarters
+                    of the coastal district of Dakshina Kannada, and boasts an important centre of education, business
+                    and
+                    trade in the state. Sri. U. Srinivasa Mallya, a visionary and a philanthropist, contributed
+                    immensely to the development of the coastal region of Karnataka, and his effort towards
+                    establishment of KREC
+                    (now NITK) is the most significant one. In recognition of his role as the founder and architect of
+                    the
+                    institute, the campus premises is named after him as Srinivasnagar.
+                </p>
+            </div>
+            <div class="flex items-center md:w-1/3">
+                <img src="{% static 'img/nitk.webp' %}" alt="National Institute of Technology Karnataka, Surathkal"
+                    class="h-auto max-h-full">
+            </div>
+        </div>
+    </div>
+
+    <div class="my-8">
+        <h2 class="my-2 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl">
+            About Department of Electrical and Electronics Engineering (EEE)
+        </h2>
+        <div class="flex flex-col-reverse md:flex-row">
+            <div class="flex items-center md:w-1/3">
+                <img src="{% static 'img/eee_dept.jpg' %}" alt="Department of Electrical and Electronics Engineering">
+            </div>
+            <div class="flex items-center md:w-2/3 p-8">
+                <p class="text-justify">
+                    The Department of Electrical and Electronics Engineering (EEE) is one of the core departments of
+                    National Institute of Technology Karnataka (NITK) right from its inception in 1960 as erstwhile
+                    Karnataka Regional Engineering College (KREC) with the under-graduate programme. The post-graduate
+                    programme specialized in Power and Energy Systems started in the year 1992. Research programmes
+                    leading to doctoral degree (Ph.D) were introduced in the year 2003. The department has well-equipped
+                    state-of-the-art laboratories to augment the coursework and enhance the research potentials. It has
+                    a dynamic group of faculties with profound experience in academics, research and industry, dedicated
+                    in teaching-learning process and actively engaged in the cutting edge R&D activities like Smart Grid
+                    Operation & Control, Power Electronics & Renewable Energy, Biomedical Imaging & Signal Processing,
+                    Electric Vehicle & Wireless Power Transfer, Artificial Intelligence & Machine Learning, etc.
+                    Recognitions like Young Faculty Research Fellowship and POSOCO award for research publications have
+                    been received by the faculty. Various externally sponsored research projects funded by DST, SERB,
+                    MNRE, CPRI, DELL, CDAC, Infineon, Texas Instruments, Schneider Electric, L&T, Robert Bosch, MeitY
+                    etc. has been undergoing in the department over the years. The department also undertakes many
+                    consultancy projects from industry and other organisations. A good number of publications including
+                    patents, international journals & conferences comes throughout the year from its academicians and
+                    students.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-8">
+        <h2 class="my-2 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl">
+            About Mangalore
+        </h2>
+        <div class="flex flex-col md:flex-row">
+            <div class="flex items-center flex-col md:w-2/3 p-8">
+                <p class="text-justify">
+                    Mangalore , officially known as Mangaluru is a major industrial port city in the Indian state of
+                    Karnataka and on the west coast of India. It is located between the Arabian Sea and the Western
+                    Ghats about 352 km (219 mi) west of Bangalore, the state capital, 14 km north of Karnataka - Kerala
+                    border and 297 km south of Goa. Mangalore is the state's only city to have all four modes of
+                    transport—air, road, rail and sea. It is known for being one of the locations of the Indian
+                    strategic petroleum reserves.The city developed as a port in the Arabian Sea during ancient times,
+                    and after Independence a new port was constructed in 1968 and has since become a major port of India
+                    that handles 75 percent of India's coffee and cashew exports. It is also the country's seventh
+                    largest container port. Mangalore is one of the fastest developing cities in India. The Dakshina
+                    Kannada district with its administrative headquarters at Mangalore has the highest Per Capita Income
+                    and Gross State Domestic Product in Karnataka, after Bangalore. Mangalore is a commercial,
+                    industrial, business, educational, healthcare, and startup hub. Mangalore City Corporation is
+                    responsible for the civic administration which manages the 60 wards of the city. Its landscape is
+                    characterised by rolling hills, coconut palms, rivers, and hard laterite soil.
+                </p>
+                <p class="text-justify">
+                    Mangalore is included as one of the cities in the Smart Cities Mission list and is among the 100
+                    smart cities to be developed in India. It has an average elevation of 22 m (72 ft) above mean sea
+                    level. It has a tropical monsoon climate and is under the influence of the southwest monsoon. It has
+                    its own International Airport which is around 15 km from the city centre.
+                </p>
+            </div>
+            <div class="flex items-center md:w-1/3">
+                <img src="{% static 'img/mangalore.jpeg' %}" alt="St. Aloysius Chapel">
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-10">
+        <h2 class="my-2 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl">
+            How to reach NITK
+        </h2>
+        <div>
+            <div>
+                <p class="text-justify">
+                    NITK is well connected to the city of Mangalore, which can easily be reached via train, flight or
+                    bus.
+                </p>
+                <ul class="list list-decimal ml-16 my-5 text-justify">
+                    <li>Buses from Bangalore and other parts of Karnataka have a stop right in front of the college main
+                        gate.</li>
+                    <li>There are domestic and international flights at Mangalore International Airport, which is well
+                        connected to other cities within and outside India.</li>
+                    <li>If you choose to come via train, Mangalore has two train stations - Mangalore Central railway
+                        station, and Mangalore Junction.</li>
+                    <li>Surathkal also has its railway station, however it is not very well connected to some of the
+                        more popular train routes.</li>
+                </ul>
+                <p class="text-justify">
+                    From Mangalore and Surathkal, there are plently of autorikshaws, taxi cabs and buses that can drop
+                    you to the institute entrance. More information can be found <a
+                        href="https://en.wikivoyage.org/wiki/Mangalore" target="_blank"
+                        class="underline underline-offset-2 text-sky-800">here</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-5">
+        <h2 class="my-2 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl">
+            Tourist Attractions near Mangalore
+        </h2>
+        <div>
+            <div>
+                <p class="text-justify">
+                    Mangalore offers a range of tourist attractions that showcase its cultural, historical, and natural
+                    beauty.
+                </p>
+                <ul class="list list-disc ml-16 my-5 text-justify">
+                    <li>
+                        <strong>Kudroli Gokarnath Temple</strong>: This historic temple is dedicated to Lord Gokarnath
+                        and is known for its distinctive architecture and intricate carvings. The temple hosts various
+                        cultural and religious events throughout the year.
+                    </li>
+                    <li>
+                        <strong>Panambur Beach</strong>: One of the most popular beaches in Mangalore, Panambur Beach is
+                        known for its golden sands and clear waters. It's an ideal place for relaxation and water
+                        sports.
+                    </li>
+                    <li>
+                        <strong>Sultan Battery</strong>: This historical watchtower was built by Tipu Sultan to protect
+                        the Mangalore port. It offers panoramic views of the Arabian Sea and is a significant historical
+                        site.
+                    </li>
+                    <li>
+                        <strong>Ullal Beach</strong>: Located a short drive from Mangalore, Ullal Beach is a quieter and
+                        less crowded beach with scenic views. It's an excellent spot for a peaceful day by the sea.
+                    </li>
+                    <li>
+                        <strong>St. Aloysius Chapel</strong>: This chapel is famous for its stunning frescoes and
+                        artistic interior. The paintings on the chapel's walls are considered among the most beautiful
+                        in India and depict various biblical scenes.
+                    </li>
+                </ul>
+                <p class="text-justify">
+                    In addition to these top five attractions, Mangalore offers several other points of interest,
+                    including temples, churches, historical sites, and beautiful beaches. Don't forget to explore the
+                    local cuisine, which is renowned for its seafood and traditional Mangalorean dishes.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
