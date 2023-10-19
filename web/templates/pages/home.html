@@ -20,140 +20,155 @@ Home
       }
   }
 }
+  .text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+   }
 </style>
 
 <section class="bg-white">
 	<div id="default-carousel" class="relative w-full h-400" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden  md:h-96" style="height: 60vh; position: relative;">
+		<!-- Carousel wrapper -->
+		<div class="relative h-56 overflow-hidden  md:h-96" style="height: 80vh; position: relative;">
 
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="{% static 'img/UAV-Workshop-2.jpg' %}" class="absolute block w-full h-full object-cover" alt="...">
-          <!-- Text overlay -->
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-              2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
-          </h1>
-          <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-              PEDES-2024
-          </h1>
-              
-              <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                
-                18 - 21 December, 2024
-            </p>
-            
-            <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                  National Institute of Technology Karnataka, Surathkal
-              </p>
-          </div>
-      </div>
-                     
-        
+			<!-- Item 1 -->
+			<div class="hidden duration-700 ease-in-out" data-carousel-item>
+				<img src="{% static 'img/UAV-Workshop-2.jpg' %}" style="width:100% ;height:100%" alt="...">
+				<!-- Text overlay -->
+				<div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+					<!-- <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
+					</h1>
+					<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						PEDES-2024
+					</h1>
+
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+
+						18 - 21 December, 2024
+					</p>
+
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+						National Institute of Technology Karnataka, Surathkal
+					</p> -->
+				</div>
+			</div>
+
+
 			<!-- Item 2 -->
 			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="{% static 'img/1.jpg' %}"
-        class="absolute block w-full h-full object-cover" alt="...">
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
-            </h1>
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                PEDES-2024
-            </h1>
-            <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                
-              18 - 21 December, 2024
-          </p>
-          
-          <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                National Institute of Technology Karnataka, Surathkal
-            </p>
-        </div>
+				<img src="{% static 'img/1.jpg' %}" class="absolute block w-full h-full object-cover" alt="...">
+				<div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+					<!-- <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
+					</h1>
+					<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						PEDES-2024
+					</h1>
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+
+						18 - 21 December, 2024
+					</p>
+
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+						National Institute of Technology Karnataka, Surathkal
+					</p> -->
+				</div>
 			</div>
 			<!-- Item 3 -->
 			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="{% static 'img/10.jpg' %}"
-        class="absolute block w-full h-full object-cover" alt="...">
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
-            </h1>
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                PEDES-2024
-            </h1>
-            <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                
-              18 - 21 December, 2024
-          </p>
-          
-          <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                National Institute of Technology Karnataka, Surathkal
-            </p>
-        </div>
+				<img src="{% static 'img/10.jpg' %}" class="absolute block w-full h-full object-cover" alt="...">
+				<div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+					<!-- <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
+					</h1>
+					<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						PEDES-2024
+					</h1>
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+
+						18 - 21 December, 2024
+					</p>
+
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+						National Institute of Technology Karnataka, Surathkal
+					</p> -->
+				</div>
 			</div>
 			<!-- Item 4 -->
 			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="{% static 'img/4.jpg' %}"
-        class="absolute block w-full h-full object-cover" alt="...">
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
-            </h1>
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                PEDES-2024
-            </h1>
-            <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                
-              18 - 21 December, 2024
-          </p>
-          
-          <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                National Institute of Technology Karnataka, Surathkal
-            </p>
-        </div>
+				<img src="{% static 'img/4.jpg' %}" class="absolute block w-full h-full object-cover" alt="...">
+				<div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+					<!-- <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
+					</h1>
+					<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						PEDES-2024
+					</h1>
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+
+						18 - 21 December, 2024
+					</p>
+
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+						National Institute of Technology Karnataka, Surathkal
+					</p> -->
+				</div>
 			</div>
 			<!-- Item 5 -->
 			<div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="{% static 'img/DJI_0012.jpg' %}"
-        class="absolute block w-full h-full object-cover" alt="...">
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
-            </h1>
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                PEDES-2024
-            </h1>
-            <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                
-              18 - 21 December, 2024
-          </p>
-          
-          <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                National Institute of Technology Karnataka, Surathkal
-            </p>
-        </div>
+				<img src="{% static 'img/DJI_0012.jpg' %}" class="absolute block w-full h-full object-cover" alt="...">
+				<div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+					<!-- <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
+					</h1>
+					<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						PEDES-2024
+					</h1>
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+
+						18 - 21 December, 2024
+					</p>
+
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+						National Institute of Technology Karnataka, Surathkal
+					</p> -->
+				</div>
 			</div>
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-				<img src="{% static 'img/NITK-Vistas.jpg' %}"
-        class="absolute block w-full h-full object-cover" alt="...">
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
-            </h1>
-            <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2" style="font-family: Helvetica, Arial, sans-serif;">
-                PEDES-2024
-            </h1>
-            <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                
-              18 - 21 December, 2024
-          </p>
-          
-          <p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
-                National Institute of Technology Karnataka, Surathkal
-            </p>
-        </div>
+			<!-- Item 6 -->
+			<div class="hidden duration-700 ease-in-out" data-carousel-item>
+				<img src="{% static 'img/NITK-Vistas.jpg' %}" class="absolute block w-full h-full object-cover"
+					alt="...">
+				<div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+					<!-- <h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						2024 IEEE International Conference on Power Electronics, Drives and Energy Systems
+					</h1>
+					<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2"
+						style="font-family: Helvetica, Arial, sans-serif;">
+						PEDES-2024
+					</h1>
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+
+						18 - 21 December, 2024
+					</p>
+
+					<p class="text-sm md:text-lg lg:text-xl font-bold mb-2 flex items-center">
+						National Institute of Technology Karnataka, Surathkal
+					</p> -->
+				</div>
 			</div>
 		</div>
 		<!-- Slider indicators -->
@@ -170,11 +185,32 @@ Home
 				data-carousel-slide-to="4"></button>
 		</div>
 		<!-- Slider controls -->
+		<!-- text-over -->
+		<div class="absolute inset-x-0 top-1/4 flex flex-col items-center justify-center z-30">
+			<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-4 text-white text-center"
+				style="font-family: Helvetica, Arial, sans-serif;">
+				2024 IEEE International Conference on Power Electronics
+			</h1>
 
+			<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-2 text-white"
+				style="font-family: Helvetica, Arial, sans-serif;">
+				Drives and Energy Systems
+			</h1>
+			<h1 class="text-xl md:text-3xl xl:text-4xl font-extrabold mb-4 text-white"
+				style="font-family: Helvetica, Arial, sans-serif;">
+				PEDES 2024
+			</h1>
 
-		<div class="absolute inset-x-0 top-3/4 flex items-center justify-center z-30">
-      <a href="{% static 'pdf/Broucher.pdf' %}" class="bg-blue-500 text-white py-2 px-4 rounded">Brochure</a>
-  </div>
+			<p class="text-sm md:text-lg lg:text-xl font-bold mb-4 flex items-center text-white">
+				18 - 21 December 2024
+			</p>
+
+			<p class="text-sm md:text-lg lg:text-xl font-bold mb-12 flex items-center text-white">
+				National Institute of Technology Karnataka, Surathkal
+			</p>
+
+			<a href="{% static 'pdf/Brochure.pdf' %}" class="bg-blue-500 text-white py-2 px-4 rounded">Brochure</a>
+		</div>
 
 		<button type="button"
 			class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
@@ -203,7 +239,7 @@ Home
 			</span>
 		</button>
 	</div>
-</div>
+	</div>
 </section>
 
 <section class="bg-gray-1 ">
@@ -18037,56 +18073,58 @@ z" />
 
 
 <section id="about">
-  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-    <h3 class="text-3xl font-extrabold font-helvetica">About PEDES</h3>
-    <p class="my-4 text-lg text-gray-500 font-helvetica">
-      <span class="font-extrabold my-2"
-        >IEEE Power Electronics, Drives and Energy Systems (PEDES)</span
-      >
-      <br />
-      IEEE PEDES 2024 will be held at National Institute of Technology Karnataka
-      (NITK) Surathkal, Mangaluru from 18th -21st December 2024. IEEE PEDES is a
-      biennial conference sponsored by IEEE Industry Applications Society and
-      technically co-sponsored by IEEE Power Electronics Society, Industrial
-      Electronics Society, and Power& Energy Society. The goal of PEDES is to
-      provide a platform for conference, exhibition and tutorial on selected
-      topics of contemporary interest. The conference provides a unique forum
-      for the exchange of knowledge and information among the professionals
-      across the globe in the area of power electronics, drives and energy
-      system subjects which have greater significance owing to the emphasis on
-      energy affected by the climate change. The conference aims at bringing
-      together the users and researchers of electrical energy conversion systems
-      and sub-systems with the emphasis on technical content of the papers.
-    </p>
-    <h3 class="text-3xl font-extrabold font-helvetica">About NITK</h3>
-    <p class="my-4 text-lg text-gray-500 font-helvetica">
-      <span class="font-extrabold"
-        >National Institute of Technology Karnataka, Surathkal</span
-      >
-      is a premier Institution engaged in imparting quality technological
-      education and providing support to research and development activities.
-      NITK is recognized as an institute of national importance by an act of
-      parliament. NITK has carved a niche for itself among the best technical
-      institutes in India. NITK offers 9 UG, 26 PG programs and PhD programs.
-      <br />
-      <span class="my-2 font-extrabold"
-        >Department of Electrical & Electronics Engineering</span
-      >
-      <br />
-      The Department of Electrical and Electronics Engineering strives to be a
-      center of excellence in education, training and research, producing high
-      quality engineers and researchers. In this endeavour, the department will
-      continually develop knowledge and quality of staff, upgrade and create new
-      laboratory facilities, revise the teaching program, acquire adequate new
-      equipment to keep abreast, contribute and progress in the emerging
-      technologies and committed for rendering the best service to the society.
-      The faculty of the department has been involved in several research
-      projects in cutting edge technologies and publications in many
-      international journals and conferences. The department also undertakes
-      many consultancy projects from industry and other organisations.
-    </p>
-  </div>
+    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 text-justify">
+        <h3 class="text-4xl font-extrabold font-helvetica">About PEDES</h3>
+        <p class="my-6 text-xl text-gray-700 font-helvetica">
+            <span class="font-extrabold my-3">
+                IEEE Power Electronics, Drives and Energy Systems (PEDES)
+            </span>
+            <br />
+            IEEE PEDES 2024 will be held at National Institute of Technology Karnataka
+            (NITK) Surathkal, Mangaluru from 18th -21st December 2024. IEEE PEDES is a
+            biennial conference sponsored by IEEE Industry Applications Society and
+            technically co-sponsored by IEEE Power Electronics Society, Industrial
+            Electronics Society, and Power & Energy Society. The goal of PEDES is to
+            provide a platform for conference, exhibition and tutorial on selected
+            topics of contemporary interest. The conference provides a unique forum
+            for the exchange of knowledge and information among the professionals
+            across the globe in the area of power electronics, drives and energy
+            system subjects which have greater significance owing to the emphasis on
+            energy affected by the climate change. The conference aims at bringing
+            together the users and researchers of electrical energy conversion systems
+            and sub-systems with the emphasis on technical content of the papers.
+        </p>
+        <h3 class="text-4xl font-extrabold font-helvetica">About NITK</h3>
+        <p class="my-6 text-xl text-gray-700 font-helvetica">
+            <span class="my-3 font-extrabold">
+                National Institute of Technology Karnataka, Surathkal
+            </span>
+            is a premier Institution engaged in imparting quality technological
+            education and providing support to research and development activities.
+            NITK is recognized as an institute of national importance by an act of
+            parliament. NITK has carved a niche for itself among the best technical
+            institutes in India. NITK offers 9 UG, 26 PG programs and PhD programs.
+            <br /><br>
+			<span class="my-3 font-extrabold block">
+				Department of Electrical & Electronics Engineering
+			</span>
+            The Department of Electrical and Electronics Engineering strives to be a
+            center of excellence in education, training and research, producing high
+            quality engineers and researchers. In this endeavour, the department will
+            continually develop knowledge and quality of staff, upgrade and create new
+            laboratory facilities, revise the teaching program, acquire adequate new
+            equipment to keep abreast, contribute and progress in the emerging
+            technologies and committed for rendering the best service to the society.
+            The faculty of the department has been involved in several research
+            projects in cutting edge technologies and publications in many
+            international journals and conferences. The department also undertakes
+            many consultancy projects from industry and other organisations.
+        </p>
+    </div>
 </section>
+
+
+  
 
 
 
@@ -18141,30 +18179,28 @@ z" />
   <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
     <h2 class="text-4xl font-extrabold text-center mb-8">Timeline</h2>
 
-    <ol class="relative border-l border-gray-200">
-      <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-        <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15th February 2024</time>
-        <h3 class="text-base font-normal text-gray-900 font-helvetica">Opening date of submission of
-			digest</h3>
-      </li>
-      <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-        <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15th September 2024</time>
-        <h3 class="text-base font-normal text-gray-900 font-helvetica">Acceptance Notification of Digest</h3>
-      </li>
-	  <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-        <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15th October 2024</time>
-        <h3 class="text-base font-normal text-gray-900 font-helvetica">Submission of Final Manuscript and
-			Copyright Form</h3>
-      </li>
-      <li class="ml-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-        <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">18th - 21st December 2024</time>
-        <h3 class="text-base font-normal text-gray-900 font-helvetica">Conference Dates</h3>
-      </li>
-    </ol>
+	<ol class="relative border-l border-gray-200">
+		<li class="mb-10 ml-4">
+		  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+		  <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15<sup>th</sup> February 2024</time>
+		  <h3 class="text-base font-normal text-gray-900 font-helvetica">Opening date of submission of digest</h3>
+		</li>
+		<li class="mb-10 ml-4">
+		  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+		  <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">15<sup>th</sup> August 2024</time>
+		  <h3 class="text-base font-normal text-gray-900 font-helvetica">Acceptance Notification of Digest</h3>
+		</li>
+		<li class="mb-10 ml-4">
+		  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+		  <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">1<sup>st</sup> September 2024</time>
+		  <h3 class="text-base font-normal text-gray-900 font-helvetica">Submission of Final Manuscript and Copyright Form</h3>
+		</li>
+		<li class="ml-4">
+		  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+		  <time class="mb-1 text-lg font-bold leading-none text-gray-900 font-helvetica">18<sup>th</sup> - 21<sup>st</sup> December 2024</time>
+		  <h3 class="text-base font-normal text-gray-900 font-helvetica">Conference Dates</h3>
+		</li>
+	  </ol>	  
   </div>
 </section>
 
