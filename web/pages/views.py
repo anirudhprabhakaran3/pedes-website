@@ -10,3 +10,16 @@ def home(request):
 
 def committee(request):
     return render(request, "pages/committee.html")
+
+def important_dates(request):
+    return render(request, "pages/important_dates.html")
+
+
+def tracks(request):
+    return render(request, "pages/tracks.html")
+
+def contact(request):
+    return render(request, "pages/contact.html")
+
+def about(request):
+    return render(request,"pages/about.html")

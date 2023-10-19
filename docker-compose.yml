@@ -3,6 +3,8 @@ version: '3'
 services:
   db:
     image: mysql:8.1.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD
     env_file:
       - .env
     expose:
@@ -24,8 +26,8 @@ services:
     env_file:
       - .env
     volumes:
-      - static:/code/static
-      - media:/code/media
+      - static:/code/prod_static
+      - media:/code/prod_media
     networks:
       - pedesnet
     depends_on:
@@ -39,7 +41,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - 80:80
+      - 3000:80
     volumes:
       - static:/web/static
       - media:/web/media
