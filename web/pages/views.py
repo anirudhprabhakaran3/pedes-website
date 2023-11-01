@@ -26,3 +26,15 @@ def about(request):
 
 def call_for_papers(request):
     return render(request,"pages/call_for_papers.html")
+
+def speakers(request):
+    return render(request, "pages/speakers.html")
+
+def event_details(request):
+    return render(request, "pages/event_details.html")
+
+def accomodation(request):
+    return render(request, "pages/accomodation.html")
+
+def registration(request):
+    return render(request, "pages/registration.html")
