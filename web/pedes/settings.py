@@ -77,9 +77,14 @@ WSGI_APPLICATION = "pedes.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': ':memory:',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": os.environ.get("MYSQL_NAME", "pedes"),
+        "USER": os.environ.get("MYSQL_USER", "pedes"),
+        "PASSWORD": os.environ.get("MYSQL_PASSWORD", "password"),
+        "HOST": "db",
+        "PORT": "3306",
+        "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
     }
 }
 
