@@ -38,3 +38,6 @@ def accomodation(request):
 
 def registration(request):
     return render(request, "pages/registration.html")
+
+def paper_submission(request):
+    return render(request, "pages/paper_submission.html")
