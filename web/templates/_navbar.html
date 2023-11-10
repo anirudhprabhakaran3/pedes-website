@@ -2,23 +2,19 @@
 
 <nav class="bg-white border-b-2 border-gray-200">
         <div class="flex flex-wrap items-center justify-between mx-auto py-2 px-2 border">
-            <ul class="flex flex-row justify-around font-small md:p-0 border border-gray-100 rounded-lg bg-gray-50 border-0 bg-white">
-                <li class="mr-3 md:mx-3 flex justify-center items-center">
-                    <a href="{% url 'home' %}">
-                            <img src="{% static 'img/pedes_logo_text.svg' %}" class="h-12 mx-1" alt="PEDES Logo" />
-                    </a>
-                </li>
-                <li class="mr-3 flex justify-center items-center">
-                    <a href="https://www.nitk.ac.in/" target="_blank">
-                        <img src="{% static 'img/nitk.svg' %}" class="h-8 mx-1" alt="NITK">
-                    </a>
-                </li>
-                <li class="flex justify-center items-center">
-                    <a href="https://www.ieee.org/" target="_blank">
-                        <img src="{% static 'img/ieee.svg' %}" class="h-6 mx-1" alt="IEEE">
-                    </a>
-                </li>
-            </ul>
+            <div class="flex flex-row">
+                <a href="{% url 'home' %}" class="mx-3">
+                    <img src="{% static 'img/pedes_logo_text.svg' %}" class="h-14 md:h-20 mx-1" alt="PEDES Logo" />
+                </a>
+            </div>
+            <div class="flex flex-row">
+                <a href="https://www.nitk.ac.in/" target="_blank" class="mx-3">
+                    <img src="{% static 'img/nitk.svg' %}" class="h-8 md:h-12 mx-1" alt="NITK">
+                </a>
+                <a href="https://www.ieee.org/" target="_blank" class="mx-3">
+                    <img src="{% static 'img/ieee.svg' %}" class="h-6 md:h-10 mx-1" alt="IEEE">
+                </a>
+            </div>
         </div>
         <div class="flex flex-wrap items-center justify-between mx-auto py-4 px-2">
                 <div class="flex flex-row md:hidden">
