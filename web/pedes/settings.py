@@ -27,6 +27,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "secret_key")
 DEBUG = os.environ.get("DJANGO_DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "pedes2024.org"]
+CSRF_TRUSTED_ORIGINS = ['https://pedes2024.org','http://localhost:3000']
 
 
 # Application definition

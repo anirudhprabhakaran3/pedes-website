@@ -10,9 +10,10 @@
     <meta http-equiv="Content-Security-Policy" content="font-src 'self' https://fonts.googleapis.com">
     <title>{% block title %}{% endblock %} | PEDES 2024</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-Lk+xZyJdqrMvhUObQDp70T/FdRz28ewEZ6tx/AXGVL5VKmW9TL82F2Z0zjhtDk4c" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+          integrity="sha384-Lk+xZyJdqrMvhUObQDp70T/FdRz28ewEZ6tx/AXGVL5VKmW9TL82F2Z0zjhtDk4c" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
 
     <style>
@@ -22,14 +23,18 @@
 
 <body class="flex flex-col min-h-screen">
 
-    {% include '_navbar.html' %}
+{% block announcements %}
 
-    <div class="flex-grow">
-        {% block content %}
-        {% endblock %}
-    </div>
+{% endblock %}
 
-    {% include "_footer.html" %}
+{% include '_navbar.html' %}
+
+<div class="flex-grow">
+    {% block content %}
+    {% endblock %}
+</div>
+
+{% include "_footer.html" %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </body>
