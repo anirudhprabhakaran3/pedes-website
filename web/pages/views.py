@@ -59,3 +59,12 @@ def registration(request):
 
 def paper_submission(request):
     return render(request, "pages/paper_submission.html")
+
+def keynote(request):
+    return render(request, "pages/keynote.html")
+
+def tutorial(request):
+    return render(request, "pages/tutorial.html")
+
+def student_travel_award(request):
+    return render(request, "pages/student_travel_award.html")

@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, committee, important_dates, tracks, contact,about,call_for_papers, speakers, event_details,accomodation, registration,paper_submission
+from .views import home, committee, important_dates, tracks, contact,about,call_for_papers, speakers, event_details,accomodation, registration,paper_submission,keynote,tutorial,student_travel_award
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -16,4 +16,8 @@ urlpatterns = [
     path("accomodation/",accomodation,name="accomodation"),
     path("registration/",registration,name="registration"),
     path("paper_submission/",paper_submission,name="paper_submission"),
+    path("keynote/", keynote, name="keynote"),
+    path("tutorial/", tutorial, name="tutorial"),
+    path("student_travel_award/", student_travel_award, name="student_travel_award"),
+
 ]
