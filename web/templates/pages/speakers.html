@@ -1,12 +1,101 @@
 {% extends 'base.html' %}
+{% load static %}
 {%block title%}
 Speakers
 {%endblock%}
 
 {%block content%}
 <div class="py-8">
-    <h1 class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-        Will be announced later
+    <h1 class="my-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+        Speakers
     </h1>
+
+    <div class="my-5 mx-5">
+        <h2 class="text-3xl font-extrabold">Keynote Speakers</h2>
+
+        <div class="flex flex-col justify-center items-center mt-5 gap-4">
+            <div class="flex flex-col md:flex-row w-full items-center justify-around gap-2">
+                <div>
+                    <img src="{% static 'img/Milos_Manic.jpeg' %}" class="border rounded-sm drop-shadow-2xl" height="300" width="300" />
+                    <p class="prose text-justify">
+                        Prof. Milos Manic
+                        President of the IEEE Industrial Electronics Society (IES)
+                        Prof in Computer Science Department at Virginia Commonwealth University
+                        director of the VCU Cybersecurity Center.
+                    </p>
+                </div>
+                <div class="prose text-justify">
+                    <h2 class="mb-0">Milos Manic</h2>
+                    <p>
+                        Milos Manic is currently the President of the IEEE Industrial Electronics Society (IES) 
+                        and a professor with the Computer Science Department at Virginia Commonwealth University 
+                        and is the director of the VCU Cybersecurity Center. He is also a Commonwealth Cyber Initiative Fellow, 
+                        inaugural class 2020-2022.
+                    </p>
+                    <p>
+                        As a principal investigator or university partner, he has completed more than 40 research grants 
+                        with the departments of Energy, Homeland Security, Air Force, Battelle Energy Alliance/Idaho National Laboratory, 
+                        National Science Foundation, and industry entities, in the area of data mining and machine learning applied to 
+                        cybersecurity, critical infrastructure protection, energy security, and resilient intelligent control.
+                    </p>
+                    <p>
+                        Manic has given over 40 invited talks around the world, authored more than 200 refereed articles in international journals, 
+                        books, and conferences, holds several U.S. patents and won the 2018 R&D 100 Award for Autonomic Intelligent Cyber Sensor (AICS), 
+                        one of top 100 science and technology worldwide innovations in 2018. He is also an inductee of U.S. National Academy of Inventors (class of 2019).
+                    </p>
+                    <p>
+                        He is an IEEE Fellow, recipient of IEEE IES 2019 Anthony J. Hornfeck Service Award. He also received the 
+                        2012 J. David Irwin Early Career Award and 2017 IEM Best Paper Award. He served as associate editor of 
+                        Trans. on Industrial Electronics, was a founding chair of IEEE IES Technical Committee on Resilience and Security in Industry, 
+                        and a general chair of IEEE IECON 2018, IEEE HSI 2019.
+                    </p>           
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row w-full items-center justify-around gap-2">
+                <div>
+                    <img src="{% static 'img/Gourab_Majumdar.jpeg' %}" class="border rounded-sm drop-shadow-2xl" height="300" width="300" />
+                    <p class="prose text-justify">
+                        Prof. Gourab Majumdar
+                        BTech in electrical engineering from Indian Institute of Technology (IIT), Delhi
+                        Doctor of Engineering degree from Kyushu Institute of Technology (KIT)
+                    </p>
+                </div>
+                <div class="prose text-justify">
+                    <h2 class="mb-0">Gourab Majumdar</h2>
+                    <p>
+                        Gourab Majumdar received Bachelor of Technology degree in electrical engineering 
+                        from Indian Institute of Technology (IIT), Delhi, India in 1977 and Doctor of Engineering 
+                        degree from Kyushu Institute of Technology (KIT), Japan in 2005. He came to Japan in September 1978, 
+                        and has been living in the country since then.
+                    </p>
+                    <p>
+                        He started his job career at Mitsubishi Electric Corporation, Japan (Mitsubishi Electric) 
+                        on a special OJT program in September 1978. He was employed by the same company in 1980 and, 
+                        since 1983, has worked in its units responsible for advanced power semiconductor development, 
+                        designing and application. From April-2012 to March-2017, he served as Executive Fellow, Semiconductor & Device Group of Mitsubishi Electric.
+                        On April-2017, he was reemployed by Mitsubishi Electric on a contract basis and acted as 
+                        Senior Fellow (Technology) for Semiconductor & Device Group of the same company until March-2021.
+                    </p>
+                    <p> 
+                        From April-2022 until currently, he has been working as Senior Fellow for Power Device Works of Mitsubishi Electric. 
+                        He has published and co-authored many technical papers and books on power semiconductor devices and holds several patents in the related fields. 
+                        He is a recipient of the prestigious National Invention Award in Japan in 2005 for invention of the fundamental concept of IPM (Intelligent Power Module) 
+                        and has also received several other prestigiouscawards, including the “Monozukuri Nihon Taishou” (Japan Craftsmanship Grand Prix) award from the 
+                        Ministry of Economy, Trade and Industry in 2013 for contribution in development and commercialization of various versions of IPM devices. 
+                        He served as the General Chairman of ISPSD 2013 and has been participating as a member of PCIM's Advisory Board and ISPSD's Advisory Committee. 
+                    </p>
+                    <p>
+                        He received IEEE-ISPSD Contributory Award in 2017 for playing an active role in the field of Intelligent Power Module and Power IC technologies 
+                        and contributing largely to the ISPSD. He was nominated to be one of the first 32 inductees to IEEE-ISPSD Hall of Fame for his pioneering global role 
+                        in progressing IGBT and IPM technologies and was awarded the prestige in May 2018. He was promoted to IEEE Fellow in 2021. He lectured courses on 
+                        advanced power semiconductor devices as a visiting professor at Kyushu University and Tokyo Institute of Technology (TIT) for several years till 2019. 
+                        Also, he has been bestowed with Honorary Professorship in 2016 by Amity University, India.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 {%endblock%}
