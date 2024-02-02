@@ -1,0 +1,28 @@
+name: Deploy to container
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Connect to container over SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+
+      - name: Navigate to directory and run commands
+        run:  |
+          cd pedes-website/
+          docker compose down
+          git pull
+          docker compose up --build -d
+          docker compose exec web python manage.py collectstatic --no-input
