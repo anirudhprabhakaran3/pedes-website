@@ -18,11 +18,11 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-
-      - name: Navigate to directory and run commands
-        run:  |
-          cd pedes-website/
-          docker compose down
-          git pull
-          docker compose up --build -d
-          docker compose exec web python manage.py collectstatic --no-input
+          script: |
+            whoami
+            ls -al
+            cd pedes-website/
+            docker compose down
+            git pull
+            docker compose up --build -d
+            docker compose exec web python manage.py collectstatic --no-input
