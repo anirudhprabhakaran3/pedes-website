@@ -4,15 +4,10 @@ Registration
 {%endblock%}
 
 {%block content%}
-<div class="py-8">
-    <h1 class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-        Will be announced later
-    </h1>
-</div>
-{% comment %}
+
 <div class="container mx-auto ">
     
-
+   
     <section class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
         <div class="text-center">
             <h2 class="text-3xl lg:text-5xl font-extrabold mb-4 mr-2 ml-2 font-helvetica">
@@ -40,13 +35,13 @@ Registration
     </section>
     
     
-    <section class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+    <section class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 w-full">
         <div class="text-center">
             <h2 class="text-3xl lg:text-5xl font-extrabold mb-12 font-helvetica">REGISTRATION FEE DETAILS</h2>
         </div>
     
-        <div class="max-w-screen-lg mx-auto px-4 overflow-x-auto">
-            <table class="table table-bordered">
+        <div class="max-w-screen-lg mx-auto px-4 overflow-x-auto w-full">
+            <table class="table table-bordered w-full">
             <thead>
               <tr class=" bg-blue-700 text-white py-2 pl-4 text-center">
                 <th class="text-xl font-semibold font-helvetica">Category</th>
@@ -64,89 +59,75 @@ Registration
       
                 <tbody>
                         <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Author <br>(Academia)</td>
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Author <br>(Academia/Industry)</td>
+                            <td class="text-center font-bold">₹ 10000</td>
                             <td class="text-center font-bold">₹ 12000</td>
-                            <td class="text-center font-bold">₹ 13500</td>
-                            <td class="text-center font-bold">₹ 13000</td>
-                            <td class="text-center font-bold">₹ 14500</td>
+                            <td class="text-center font-bold">₹ 12000</td>
+                            <td class="text-center font-bold">₹ 14000</td>
                         </tr>
                         <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Author <br> (Industry)</td>
-                            <td class="text-center font-bold">₹ 13000</td>
-                            <td class="text-center font-bold">₹ 14500</td>
-                            <td class="text-center font-bold">₹ 14000</td>
-                            <td class="text-center font-bold">₹ 15500</td>
-                        </tr>
-                        <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Non Author Attendee <br> (Student)</td>
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Student Attendee</td>
+                            <td class="text-center font-bold">₹ 5000</td>
+                            <td class="text-center font-bold">₹ 6000</td>
                             <td class="text-center font-bold">₹ 6000</td>
                             <td class="text-center font-bold">₹ 7000</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Professional Attendee  <br> (Non-Author)</td>
                             <td class="text-center font-bold">₹ 7000</td>
                             <td class="text-center font-bold">₹ 8000</td>
+                            <td class="text-center font-bold">₹ 8000</td>
+                            <td class="text-center font-bold">₹ 9000</td>
                         </tr>
                         <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Non-Author Attendee <br> (Professional)</td>
-                            <td class="text-center font-bold">₹ 7000</td>
-                            <td class="text-center font-bold">₹ 8000</td>
-                            <td class="text-center font-bold">€ 8000</td>
-                            <td class="text-center font-bold">€ 9000</td>
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Author Attendee<br> (Additional page)</td>
+                            <td class="text-center font-bold">₹ 500 / page</td>
+                            <td class="text-center font-bold">₹ 500 / page</td>
+                            <td class="text-center font-bold">₹ 500 / page</td>
+                            <td class="text-center font-bold">₹ 500 / page</td>
                         </tr>
 
                         <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Author Attendee<br>(Additional page)</td>
-                            <td class="text-center font-bold">₹ 500/page</td>
-                            <td class="text-center font-bold">₹ 500/page</td>
-                            <td class="text-center font-bold">₹ 500/page</td>
-                            <td class="text-center font-bold">₹ 500/page</td>
-                        </tr>
-                        <tr >
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Tutorial <br> (Indian Attendee)</td>
-                            <td class="text-center font-bold">₹ 1000</td>
-                            <td class="text-center font-bold">₹ 1500</td>
-                            <td class="text-center font-bold">₹ 1500</td>
-                            <td class="text-center font-bold">₹ 2000</td>
-                        </tr>
-                        <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Author <br>(Academia)</td>
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Author*<br>(Academia / Industry)</td>
                             <td class="text-center font-bold">$ 350</td>
                             <td class="text-center font-bold">$ 400</td>
                             <td class="text-center font-bold">$ 400</td>
                             <td class="text-center font-bold">$ 450</td>
                         </tr>
-                        <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Author <br> (Industry)</td>
-                            <td class="text-center font-bold">$ 400</td>
-                            <td class="text-center font-bold">$ 450</td>
-                            <td class="text-center font-bold">$ 450</td>
-                            <td class="text-center font-bold">$ 500</td>
-                        </tr>
-                        <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Non Author Attendee <br> (Student)</td>
+                        <tr >
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Student Attendee</td>
                             <td class="text-center font-bold">$ 200</td>
                             <td class="text-center font-bold">$ 225</td>
                             <td class="text-center font-bold">$ 225</td>
                             <td class="text-center font-bold">$ 250</td>
                         </tr>
+                        <tr class="bg-gray-100">
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Professional Attendee  <br>(Non-Author)</td>
+                            <td class="text-center font-bold">$ 250</td>
+                            <td class="text-center font-bold">$ 300</td>
+                            <td class="text-center font-bold">$ 300</td>
+                            <td class="text-center font-bold">$ 350</td>
+                        </tr>
                         <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Non-Author Attendee <br>(Professional)</td>
-                            <td class="text-center font-bold">$ 220</td>
-                            <td class="text-center font-bold">$ 250</td>
-                            <td class="text-center font-bold">$ 250</td>
-                            <td class="text-center font-bold">$ 275</td>
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Author Attendee <br> (Additional page)</td>
+                            <td class="text-center font-bold">$ 25 / page</td>
+                            <td class="text-center font-bold">$ 25 / page</td>
+                            <td class="text-center font-bold">$ 25 / page</td>
+                            <td class="text-center font-bold">$ 25 / page</td>
                         </tr>
                         <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Author Attendee<br>(Additional page)</td>
-                            <td class="text-center font-bold">$ 25/page</td>
-                            <td class="text-center font-bold">$ 25/page</td>
-                            <td class="text-center font-bold">$ 25/page</td>
-                            <td class="text-center font-bold">$ 25/page</td>
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Tutorial only (Indian Student)</td>
+                            <td class="text-center font-bold">₹ 500</td>
+                            <td class="text-center font-bold">₹ 700</td>
+                            <td class="text-center font-bold">₹ 700</td>
+                            <td class="text-center font-bold">₹ 1000</td>
                         </tr>
                         <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Tutorial <br>(Foreign Attendee)</td>
+                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Tutorial only (Foreign Student)</td>
+                            <td class="text-center font-bold">$ 25</td>
+                            <td class="text-center font-bold">$ 35</td>
+                            <td class="text-center font-bold">$ 35</td>
                             <td class="text-center font-bold">$ 50</td>
-                            <td class="text-center font-bold">$ 75</td>
-                            <td class="text-center font-bold">$ 75</td>
-                            <td class="text-center font-bold">$ 100</td>
                         </tr>
                     </table>
                     
@@ -154,10 +135,14 @@ Registration
             </table>
             <div class="mt-8">
                 <p class="font-helvetica text-gray-700 text-justify font-bold ">
-                    *Rates exclusive of GST 18% and 3% payment gateway charges.
+                    Note: Tutorial is free for all regular registrations.
                 </p>
                 <p class="font-helvetica text-gray-700 text-justify font-bold ">
-                    **Two papers can be presented using one full registration.**
+                    One full author registration (Indian author or foreign author) 
+                    is required for the inclusion of the paper(s) in the conference programme and IEEE proceedings.
+                </p>
+                <p class="font-helvetica text-gray-700 text-justify font-bold ">
+                    One full registration can register up to 2 papers.
                 </p>
             </div>
         </div>
@@ -167,5 +152,5 @@ Registration
     
     
 </div>
-{% endcomment %}
+
 {%endblock%}
