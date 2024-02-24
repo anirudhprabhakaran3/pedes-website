@@ -1,156 +1,182 @@
 {% extends 'base.html' %}
-{%block title%}
-Registration
-{%endblock%}
+{% block title %}
+    Registration
+{% endblock %}
 
-{%block content%}
+{% block content %}
 
-<div class="container mx-auto ">
-    
-   
-    <section class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <div class="text-center">
-            <h2 class="text-3xl lg:text-5xl font-extrabold mb-4 mr-2 ml-2 font-helvetica">
-                REGISTRATION INSTRUCTIONS
-            </h2>            
-        </div>
-    
-        <div class="max-w-screen-lg mx-auto px-4">
-            <div class="mb-4 font-helvetica text-xl text-gray-700 text-justify">
-                <ul class="list-disc text-xl text-gray-700 mb-4 mr-2 ml-2 font-helvetica text-justify">
-                    <li>A full conference registration is mandatory for including the paper in the conference program and proceedings.</li>
-                    <li>Student registration does not entitle you to IEEE Xplore paper publication.</li>
-                    <li>A full registration will cover up to 2 papers for inclusion in the conference proceedings.</li>
-                    <li>Tutorial is free for conference registrants.</li>
-                </ul>  
-                <p class="mb-4 font-helvetica text-xl text-gray-700 mr-2 ml-2 text-justify">Please register using the button below:(will be updated)</p>
-                <div class="flex items-center justify-center"> <!-- Added flex classes -->
-                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register here</button>        
+    <div class="container mx-auto ">
+        <section class="py-8 lg:py-16 mx-auto max-w-screen-xl px-2 w-full">
+            <div class="text-center">
+                <h2 class="text-3xl lg:text-5xl font-extrabold mb-12 font-helvetica">REGISTRATION FEE DETAILS</h2>
+            </div>
+
+            <div class="max-w-screen-lg mx-auto px-2 overflow-x-auto w-full">
+                <table class="table table-bordered w-full">
+                    <thead>
+                    <tr class="bg-blue-700 text-white py-2 pl-4 text-center">
+                        <th class="text-xl font-semibold font-helvetica">Category</th>
+                        <th class="text-xl font-semibold font-helvetica font-weight-bold" colspan="2">EARLY BIRD
+                            RATES<br>
+                            [Up to October 15, 2024]
+                        </th>
+                        <th class="text-xl font-semibold font-helvetica font-weight-bold" colspan="2">STANDARD RATES<br>
+                            [After October 15, 2024]
+                        </th>
+                    </tr>
+                    <tr class="bg-blue-400">
+                        <th class="text-xl font-semibold font-helvetica"></th>
+                        <th class="text-xl font-semibold font-helvetica font-weight-bold">IEEE Member</th>
+                        <th class="text-xl font-semibold font-helvetica font-weight-bold">Non-IEEE Member</th>
+                        <th class="text-xl font-semibold font-helvetica font-weight-bold">IEEE Member</th>
+                        <th class="text-xl font-semibold font-helvetica font-weight-bold">Non-IEEE Member</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr class="bg-gray-100">
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Indian Author <br>(Academia/Industry)
+                        </td>
+                        <td class="py-4 text-center font-bold">₹ 10000</td>
+                        <td class="py-4 text-center font-bold">₹ 12000</td>
+                        <td class="py-4 text-center font-bold">₹ 12000</td>
+                        <td class="py-4 text-center font-bold">₹ 14000</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Indian Student
+                            Attendee
+                        </td>
+                        <td class="py-4 text-center font-bold">₹ 5000</td>
+                        <td class="py-4 text-center font-bold">₹ 6000</td>
+                        <td class="py-4 text-center font-bold">₹ 6000</td>
+                        <td class="py-4 text-center font-bold">₹ 7000</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Indian
+                            Professional Attendee
+                            <br> (Non-Author)
+                        </td>
+                        <td class="py-4 text-center font-bold">₹ 7000</td>
+                        <td class="py-4 text-center font-bold">₹ 8000</td>
+                        <td class="py-4 text-center font-bold">₹ 8000</td>
+                        <td class="py-4 text-center font-bold">₹ 9000</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Indian Author
+                            Attendee<br>
+                            (Additional page)
+                        </td>
+                        <td class="py-4 text-center font-bold">₹ 500 / page</td>
+                        <td class="py-4 text-center font-bold">₹ 500 / page</td>
+                        <td class="py-4 text-center font-bold">₹ 500 / page</td>
+                        <td class="py-4 text-center font-bold">₹ 500 / page</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Tutorial only<br>
+                            (Indian Student)
+                        </td>
+                        <td class="py-4 text-center font-bold">₹ 500</td>
+                        <td class="py-4 text-center font-bold">₹ 700</td>
+                        <td class="py-4 text-center font-bold">₹ 700</td>
+                        <td class="py-4 text-center font-bold">₹ 1000</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Foreign
+                            Author*<br>(Academia /
+                            Industry)
+                        </td>
+                        <td class="py-4 text-center font-bold">$ 350</td>
+                        <td class="py-4 text-center font-bold">$ 400</td>
+                        <td class="py-4 text-center font-bold">$ 400</td>
+                        <td class="py-4 text-center font-bold">$ 450</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Foreign Student
+                            Attendee
+                        </td>
+                        <td class="py-4 text-center font-bold">$ 200</td>
+                        <td class="py-4 text-center font-bold">$ 225</td>
+                        <td class="py-4 text-center font-bold">$ 225</td>
+                        <td class="py-4 text-center font-bold">$ 250</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Foreign
+                            Professional Attendee
+                            <br>(Non-Author)
+                        </td>
+                        <td class="py-4 text-center font-bold">$ 250</td>
+                        <td class="py-4 text-center font-bold">$ 300</td>
+                        <td class="py-4 text-center font-bold">$ 300</td>
+                        <td class="py-4 text-center font-bold">$ 350</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Foreign Author
+                            Attendee <br>
+                            (Additional page)
+                        </td>
+                        <td class="py-4 text-center font-bold">$ 25 / page</td>
+                        <td class="py-4 text-center font-bold">$ 25 / page</td>
+                        <td class="py-4 text-center font-bold">$ 25 / page</td>
+                        <td class="py-4 text-center font-bold">$ 25 / page</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 text-xl font-semibold font-helvetica font-weight-bold text-center">Tutorial only<br>
+                            (Foreign
+                            Student)
+                        </td>
+                        <td class="py-4 text-center font-bold">$ 25</td>
+                        <td class="py-4 text-center font-bold">$ 35</td>
+                        <td class="py-4 text-center font-bold">$ 35</td>
+                        <td class="py-4 text-center font-bold">$ 50</td>
+                    </tr>
+                </table>
+
+                </tbody>
+                </table>
+                <div class="mt-8">
+                    <p class="font-helvetica text-gray-700 text-justify font-bold ">
+                        Note: Tutorial is free for all regular registrations.
+                    </p>
+                    <p class="font-helvetica text-gray-700 text-justify font-bold ">
+                        One full author registration (Indian author or foreign author)
+                        is required for the inclusion of the paper(s) in the conference programme and IEEE proceedings.
+                    </p>
+                    <p class="font-helvetica text-gray-700 text-justify font-bold ">
+                        One full registration can register up to 2 papers.
+                    </p>
                 </div>
             </div>
-            
-        </div>        
-    
-              
-    </section>
-    
-    
-    <section class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 w-full">
-        <div class="text-center">
-            <h2 class="text-3xl lg:text-5xl font-extrabold mb-12 font-helvetica">REGISTRATION FEE DETAILS</h2>
-        </div>
-    
-        <div class="max-w-screen-lg mx-auto px-4 overflow-x-auto w-full">
-            <table class="table table-bordered w-full">
-            <thead>
-              <tr class=" bg-blue-700 text-white py-2 pl-4 text-center">
-                <th class="text-xl font-semibold font-helvetica">Category</th>
-                <th class="text-xl font-semibold font-helvetica font-weight-bold" colspan="2">EARLY BIRD RATES [Up to October 15, 2024]</th>
-                <th class="text-xl font-semibold font-helvetica font-weight-bold" colspan="2">STANDARD RATES [After October 15, 2024]</th>
-              </tr>
-              <tr class="bg-blue-400">
-                <th class="text-xl font-semibold font-helvetica"> </th>
-                <th class="text-xl font-semibold font-helvetica font-weight-bold">IEEE Member</th>
-                <th class="text-xl font-semibold font-helvetica font-weight-bold">Non-IEEE Member</th>
-                <th class="text-xl font-semibold font-helvetica font-weight-bold">IEEE Member</th>
-                <th class="text-xl font-semibold font-helvetica font-weight-bold">Non-IEEE Member</th>
-              </tr>
-            </thead>
-      
-                <tbody>
-                        <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Author <br>(Academia/Industry)</td>
-                            <td class="text-center font-bold">₹ 10000</td>
-                            <td class="text-center font-bold">₹ 12000</td>
-                            <td class="text-center font-bold">₹ 12000</td>
-                            <td class="text-center font-bold">₹ 14000</td>
-                        </tr>
-                        <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Student Attendee</td>
-                            <td class="text-center font-bold">₹ 5000</td>
-                            <td class="text-center font-bold">₹ 6000</td>
-                            <td class="text-center font-bold">₹ 6000</td>
-                            <td class="text-center font-bold">₹ 7000</td>
-                        </tr>
-                        <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Professional Attendee  <br> (Non-Author)</td>
-                            <td class="text-center font-bold">₹ 7000</td>
-                            <td class="text-center font-bold">₹ 8000</td>
-                            <td class="text-center font-bold">₹ 8000</td>
-                            <td class="text-center font-bold">₹ 9000</td>
-                        </tr>
-                        <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Indian Author Attendee<br> (Additional page)</td>
-                            <td class="text-center font-bold">₹ 500 / page</td>
-                            <td class="text-center font-bold">₹ 500 / page</td>
-                            <td class="text-center font-bold">₹ 500 / page</td>
-                            <td class="text-center font-bold">₹ 500 / page</td>
-                        </tr>
+        </section>
 
-                        <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Author*<br>(Academia / Industry)</td>
-                            <td class="text-center font-bold">$ 350</td>
-                            <td class="text-center font-bold">$ 400</td>
-                            <td class="text-center font-bold">$ 400</td>
-                            <td class="text-center font-bold">$ 450</td>
-                        </tr>
-                        <tr >
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Student Attendee</td>
-                            <td class="text-center font-bold">$ 200</td>
-                            <td class="text-center font-bold">$ 225</td>
-                            <td class="text-center font-bold">$ 225</td>
-                            <td class="text-center font-bold">$ 250</td>
-                        </tr>
-                        <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Professional Attendee  <br>(Non-Author)</td>
-                            <td class="text-center font-bold">$ 250</td>
-                            <td class="text-center font-bold">$ 300</td>
-                            <td class="text-center font-bold">$ 300</td>
-                            <td class="text-center font-bold">$ 350</td>
-                        </tr>
-                        <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Foreign Author Attendee <br> (Additional page)</td>
-                            <td class="text-center font-bold">$ 25 / page</td>
-                            <td class="text-center font-bold">$ 25 / page</td>
-                            <td class="text-center font-bold">$ 25 / page</td>
-                            <td class="text-center font-bold">$ 25 / page</td>
-                        </tr>
-                        <tr class="bg-gray-100">
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Tutorial only (Indian Student)</td>
-                            <td class="text-center font-bold">₹ 500</td>
-                            <td class="text-center font-bold">₹ 700</td>
-                            <td class="text-center font-bold">₹ 700</td>
-                            <td class="text-center font-bold">₹ 1000</td>
-                        </tr>
-                        <tr>
-                            <td class="text-xl font-semibold font-helvetica font-weight-bold">Tutorial only (Foreign Student)</td>
-                            <td class="text-center font-bold">$ 25</td>
-                            <td class="text-center font-bold">$ 35</td>
-                            <td class="text-center font-bold">$ 35</td>
-                            <td class="text-center font-bold">$ 50</td>
-                        </tr>
-                    </table>
-                    
-                </tbody>
-            </table>
-            <div class="mt-8">
-                <p class="font-helvetica text-gray-700 text-justify font-bold ">
-                    Note: Tutorial is free for all regular registrations.
-                </p>
-                <p class="font-helvetica text-gray-700 text-justify font-bold ">
-                    One full author registration (Indian author or foreign author) 
-                    is required for the inclusion of the paper(s) in the conference programme and IEEE proceedings.
-                </p>
-                <p class="font-helvetica text-gray-700 text-justify font-bold ">
-                    One full registration can register up to 2 papers.
-                </p>
+        <section class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+            <div class="text-center">
+                <h2 class="text-3xl lg:text-5xl font-extrabold mb-4 mr-2 ml-2 font-helvetica">
+                    REGISTRATION INSTRUCTIONS
+                </h2>
             </div>
-        </div>
-        
-        
-    </section>
-    
-    
-</div>
 
-{%endblock%}
+            <div class="max-w-screen-lg mx-auto px-4">
+                <div class="mb-4 font-helvetica text-xl text-gray-700 text-justify">
+                    <ul class="list-disc text-xl text-gray-700 mb-4 mr-2 ml-2 font-helvetica text-justify">
+                        <li>A full conference registration is mandatory for including the paper in the conference
+                            program and proceedings.
+                        </li>
+                        <li>Student registration does not entitle you to IEEE Xplore paper publication.</li>
+                        <li>A full registration will cover up to 2 papers for inclusion in the conference proceedings.
+                        </li>
+                        <li>Tutorial is free for conference registrants.</li>
+                    </ul>
+                    <p class="mb-4 font-helvetica text-xl text-gray-700 mr-2 ml-2 text-justify">Please register using
+                        the button below:</p>
+                    <div class="flex items-center justify-center"> <!-- Added flex classes -->
+                        <button disabled type="button"
+                                class="text-md px-3 py-1 cursor-not-allowed rounded-full border border-blue-500">
+                            Will be updated
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

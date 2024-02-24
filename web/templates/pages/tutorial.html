@@ -1,12 +1,79 @@
 {% extends 'base.html' %}
-{%block title%}
-Tutorial
-{%endblock%}
 
-{%block content%}
-<div class="py-8">
-    <h1 class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-        Will be announced later
-    </h1>
-</div>
-{%endblock%}
+{% load static %}
+
+{% block title %}
+    Tutorial
+{% endblock %}
+
+{% block content %}
+    <div class="text-center mx-auto my-10">
+        <h1 class="text-6xl font-extrabold font-arial">Tutorial Speakers</h1>
+    </div>
+
+    <div class="flex flex-col items-center justify-center text-xl font-arial">
+        <div class="w-full px-5 py-5">
+            <h2 class="text-2xl font-semibold text-center">
+                Advanced Galvanically Isolated DC-DC Converters:
+                <br/>
+                Topologies, Control and Applications
+            </h2>
+            <h3 class="text-xl text-center">
+                Dmitri Vinnikov, Akshay Kumar Rathore, Andrii Chub
+            </h3>
+        </div>
+        <div class="flex flex-col lg:flex-row mx-20 my-5">
+            <div class="basis-1/2 m-2 flex items-center justify-center">
+                <img
+                        src="{% static 'img/Dmitri_Vinnikov.jpg' %}"
+                        class="h-auto max-w-sm border border-2"
+                />
+            </div>
+            <div class="basis-1/2 m-2 text-justify flex items-center justify-center font-arial">
+                <p>
+                    <span class="font-bold">Dmitri Vinnikov (Fellow, IEEE)</span> earned his Dipl.Eng., M.Sc., and
+                    Dr.Sc.techn. degrees in electrical
+                    engineering from Tallinn University of Technology, Estonia, in 1999, 2001, and 2005, respectively.
+                    He is currently the Head of the Power Electronics Group, Department of Electrical Power Engineering
+                    and Mechatronics, Tallinn University of Technology. Since 2021 he is a member of the Estonian
+                    Academy of Sciences. He was one of the founders of ZEBE—Estonian Centre of Excellence for zero
+                    energy and resource efficient smart buildings and districts. He has authored or coauthored three
+                    books, five monographs and several book chapters as well as more than 400 published papers on power
+                    converter design and development and is the holder of numerous patents and utility models in this
+                    field. His research interests include applied design of power electronic systems, implementation of
+                    wide-bandgap semiconductors, renewable energy conversion systems, energy-efficient buildings,
+                    reliability and fault-tolerance of power electronic converters. He is an associate editor of several
+                    IEEE journals (IEEE Transactions on Industrial Electronics, IEEE Open Journal of the Industrial
+                    Electronics Society, and IEEE Transactions on Power Electronics). In 2016 he founded the joint
+                    IES/PELS Chapter of the IEEE Estonia Section and served as a Chapter Chair with the view to promote
+                    the discipline and profession in Estonia and Baltic countries through a variety of activities. In
+                    2020 he was elected as a Chair of the IEEE Estonia Section.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row-reverse mx-20 my-5">
+            <div class="basis-1/2 m-2 flex items-center justify-center">
+                <img
+                        src="{% static 'img/Andrii_Chub.jpg' %}"
+                        class="h-auto max-w-sm border border-2"
+                />
+            </div>
+            <div class="basis-1/2 m-2 text-justify flex items-center justify-center font-arial">
+                <p>
+                    <span class="font-bold">Andrii Chub (Senior Member, IEEE)</span> received the B.Sc. and M.Sc.
+                    degrees in electronic systems from
+                    the Chernihiv State Technological University, Ukraine, in 2008 and 2009, respectively, and the Ph.D.
+                    degree in electrical engineering from the Tallinn University of Technology, Estonia, in 2016.
+                    He is currently a Senior Researcher with the Power Electronics Group, Department of Electrical Power
+                    Engineering and Mechatronics, Tallinn University of Technology. He was a Visiting Research Fellow
+                    with Kiel University in 2017 and a Postdoctoral Researcher with Federico Santa Maria Technical
+                    University between 2018 and 2019.
+                    He has co-authored over 180 papers and several book chapters on power electronics and applications
+                    and holds several patents and utility models. His research interests include advanced dc-dc
+                    converter topologies, renewable energy conversion systems, energy-efficient buildings, reliability,
+                    and fault-tolerance of power electronic converters. Dr. Chub is the Chair of the Estonian
+                    IES/PELS/IAS/PES Joint Chapter, and an Associate Editor for the IEEE Journal of Emerging and
+                    Selected Topics in Industrial Electronics.
+            </div>
+        </div>
+{% endblock %}

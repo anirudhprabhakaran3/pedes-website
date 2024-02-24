@@ -1,449 +1,165 @@
-{% extends 'base.html' %} {% load static %} {%block title%} Speakers
-{%endblock%} {%block content%}
-<div class="py-8">
-  <h1
-    class="my-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
-  >
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
     Speakers
-  </h1>
+{% endblock %}
 
-  <div class="my-5 mx-5">
-    <h2 class="text-3xl font-extrabold">Keynote Speakers</h2>
-  </div>
-  <div class="my-8 text-center bg-gray-100">
-    <div class="container mx-auto">
-      <div class="my-8 text-center">
-        <div class="container mx-auto">
-          <h2
-            class="text-3xl md:text-4xl mt-6 lg:text-5xl font-bold mb-6 text-gray-900"
-          >
-            Iqbal Husain (IEEE,Fellow)
-          </h2>
-          <p
-            class="text-lg md:text-xl lg:text-2xl font-bold mb-4 text-gray-900"
-          >
-            ABB Distinguished Professor, NC State University
-            <br />
-            Director, FREEDM Systems Center, NCSU Raleigh, USA
-          </p>
-        </div>
-      </div>
+{% block content %}
+    <div class="text-center mx-auto my-10">
+        <h1 class="text-6xl font-extrabold font-arial">Keynote Speakers</h1>
+    </div>
 
-      <div class="flex flex-col-reverse md:flex-row">
-        <div class="flex items-center sm:w-full md:w-1/3">
-          <img
-            src="{% static 'img/Iqbal-Husian_keynote.jpg' %}"
-            alt="Department of Electrical and Electronics Engineering"
-            style="
-              width: 500px;
-              height: 450px;
-              padding: 10px;
-              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            "
-          />
-        </div>
-        <div class="flex items-center md:w-2/3 md:p-8">
-          <div class="border-l-2 border-r-2 border-gray-300 p-4">
-            <div class="my-8 text-center">
-              <div class="container mx-auto">
-                <div class="text-center mb-12 px-4 md:px-0">
-                  <p
-                    class="text-md md:text-lg lg:text-xl font-serif leading-relaxed text-gray-700 text-justify"
-                  >
-                    <span class="font-bold text-gray-900"
-                      >Iqbal Husain (Fellow, IEEE)</span
-                    >
-                    received his Ph.D. in electrical engineering from Texas A&M
-                    University in 1993. He currently serves as the Director of
-                    the FREEDM NSF Engineering Center and holds the prestigious
-                    position of ABB Distinguished Professor in the ECE
-                    Department at NC State University, Raleigh, NC, USA.
-                    Prior to joining NC State, he was associated with the
-                    University of Akron, Akron, OH, USA. He has been recognized
-                    for his academic contributions as a Fulbright Scholar in
-                    several Australian institutions in 2022 and as a Visiting
-                    Professor with Oregon State University, Corvallis, OR, USA,
-                    in 2001.
-                    Prof. Husain's research interests encompass power electronic
-                    system integration into the power grid and transportation
-                    electrification with wide bandgap power electronic devices
-                    and permanent magnet & reluctance machine drives. He has
-                    developed graduate and undergraduate courses on electric and
-                    hybrid vehicles and authored the textbook "Electric and
-                    Hybrid Vehicles: Design Fundamentals."
-                    He has been honored with numerous awards, including the 2023
-                    Outstanding Engagement Award and the 2022 Alcoa
-                    Distinguished Engineering Research Award at NC State, the
-                    2022 IEEE-IAS Outstanding Achievement Award, the 2006 SAE
-                    Vincent Bendix Automotive Electronics Engineering award, the
-                    2004 College of Engineering Outstanding Researcher award,
-                    the 2000 IEEE Third Millennium Medal, and the 1998 IEEE-IAS
-                    Outstanding Young Member award. He became an IEEE Fellow in
-                    2009 and served as the Editor-in-Chief of the IEEE
-                    Electrification Magazine.
-                  </p>
+    <div class="flex flex-col items-center justify-center text-xl font-arial">
+        <div class="w-full px-5 py-5">
+            <h1 class="text-4xl font-bold text-center">Iqbal Husain (Fellow, IEEE)</h1>
+            <h2 class="text-2xl font-semibold text-center">ABB Distinguished Professor, NC State University</h2>
+            <h2 class="text-2xl font-semibold text-center">Director, FREEDM System Center, NCSU Raleigh, USA</h2>
+
+            <div class="flex flex-col lg:flex-row mx-20 my-5">
+                <div class="basis-1/2 m-2 flex items-center justify-center">
+                    <img
+                            src="{% static 'img/Iqbal-Husain_keynote.jpg' %}"
+                            class="h-auto max-w-sm border border-2"
+                    />
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="my-8 text-center">
-    <div class="container mx-auto">
-      <div class="my-8 text-center">
-        <div class="container mx-auto">
-          <h2
-            class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900"
-          >
-            Emil Levi (IEEE,Fellow)
-          </h2>
-          <p
-            class="text-lg md:text-xl lg:text-2xl font-bold mb-4 text-gray-900"
-          >
-            Liverpool John Moores University, UK
-          </p>
-        </div>
-      </div>
-
-      <div class="flex flex-col-reverse md:flex-row">
-        <div class="flex items-center md:w-2/3 md:p-8">
-          <div class="border-l-2 border-r-2 border-gray-300 p-4">
-            <div class="my-8 text-center">
-              <div class="container mx-auto">
-                <div class="text-center mb-12 px-4 md:px-0">
-                  <p
-                    class="text-md md:text-lg lg:text-xl font-serif leading-relaxed text-gray-700 text-justify"
-                  >
-                    <span class="font-bold text-gray-900"
-                      >Emil Levi (Fellow, IEEE)</span
-                    >
-                    received the M.Sc. and Ph.D. degrees in electrical
-                    engineering from the University of Belgrade, Belgrade,
-                    Yugoslavia, in 1986 and 1990, respectively. He joined
-                    Liverpool John Moores University, U.K., in May 1992 and has
-                    been a Professor of Electric Machines and Drives since
-                    September 2000.
-                    He served as a Co-Editor-in-Chief of the IEEE Transactions
-                    on Industrial Electronics from 2009 to 2013. Currently, Dr.
-                    Levi holds the positions of Editor-in-Chief of the IEEE
-                    Transactions on Industrial Electronics and Editor-in-Chief
-                    of the IET Electric Power Applications.
-                    Dr. Levi has received several prestigious awards, including
-                    the Cyril Veinott Award of the IEEE Power and Energy Society
-                    for 2009 and the Best Paper Award of the IEEE Transactions
-                    on Industrial Electronics for 2008. He was honored with the
-                    “Outstanding Achievement Award” from the European Power
-                    Electronics Association in 2014 and the “Professor Istvan
-                    Nagy Award” from the Power Electronics and Motion Control
-                    Council in 2018. He is also a Foreign Member of the Serbian
-                    Academy of Engineering.
-                  </p>
+                <div class="basis-1/2 m-2 text-justify flex items-center justify-center text-xl font-arial">
+                    <p>
+                        <span class="text-bold">Iqbal Husain (Fellow, IEEE)</span> received his Ph.D. in electrical
+                        engineering from Texas A&M
+                        University in 1993. He currently serves as the Director of the FREEDM NSF Engineering Center and
+                        holds the prestigious position of ABB Distinguished Professor in the ECE Department at NC State
+                        University, Raleigh, NC, USA. Prior to joining NC State, he was associated with the University
+                        of Akron, Akron, OH, USA. He has been recognized for his academic contributions as a Fulbright
+                        Scholar in several Australian institutions in 2022 and as a Visiting Professor with Oregon State
+                        University, Corvallis, OR, USA, in 2001. Prof. Husain's research interests encompass power
+                        electronic system integration into the power grid and transportation electrification with wide
+                        bandgap power electronic devices and permanent magnet & reluctance machine drives. He has
+                        developed graduate and undergraduate courses on electric and hybrid vehicles and authored the
+                        textbook "Electric and Hybrid Vehicles: Design Fundamentals." He has been honored with numerous
+                        awards, including the 2023 Outstanding Engagement Award and the 2022 Alcoa Distinguished
+                        Engineering Research Award at NC State, the 2022 IEEE-IAS Outstanding Achievement Award, the
+                        2006 SAE Vincent Bendix Automotive Electronics Engineering award, the 2004 College of
+                        Engineering Outstanding Researcher award, the 2000 IEEE Third Millennium Medal, and the 1998
+                        IEEE-IAS Outstanding Young Member award. He became an IEEE Fellow in 2009 and served as the
+                        Editor-in-Chief of the IEEE Electrification Magazine.
+                    </p>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="flex items-center md:w-1/3">
-          <img
-            src="{% static 'img\EmilLevi_keynote.jpg' %}"
-            alt="Clock Tower"
-            style="
-              width: 500px;
-              height: 450px;
-              padding: 10px;
-              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            "
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="my-8 text-center bg-gray-100">
-    <div class="container mx-auto">
-      <div class="my-8 text-center">
-        <div class="container mx-auto">
-          <h2
-            class="text-3xl md:text-4xl mt-6 lg:text-5xl font-bold mb-6 text-gray-900"
-          >
-            Milos Manic (IEEE,Fellow)
-          </h2>
-          <p
-            class="text-lg md:text-xl lg:text-2xl font-bold mb-4 text-gray-900"
-          >
-            President of the IEEE Industrial Electronics Society (IES)
-          </p>
-        </div>
-      </div>
 
-      <div class="flex flex-col-reverse md:flex-row">
-        <div class="flex items-center sm:w-full md:w-1/3">
-          <img
-            src="{% static 'img/Milos_Manic.jpeg' %}"
-            alt="Department of Electrical and Electronics Engineering"
-            style="
-              width: 500px;
-              height: 450px;
-              padding: 10px;
-              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            "
-          />
-        </div>
-        <div class="flex items-center md:w-2/3 md:p-8">
-          <div class="border-l-2 border-r-2 border-gray-300 p-4">
-            <div class="my-8 text-center">
-              <div class="container mx-auto">
-                <div class="text-center mb-12 px-4 md:px-0">
-                  <p
-                    class="text-md md:text-lg lg:text-xl font-serif leading-relaxed text-gray-700 text-justify"
-                  >
-                    <span class="font-bold text-gray-900">Milos Manic</span>
-                    Milos Manic is currently the President of the IEEE
-                    Industrial Electronics Society (IES) and a professor with
-                    the Computer Science Department at Virginia Commonwealth
-                    University and is the director of the VCU Cybersecurity
-                    Center. He is also a Commonwealth Cyber Initiative Fellow,
-                    inaugural class 2020-2022.
-                    As a principal investigator or university partner, he has
-                    completed more than 40 research grants with the departments
-                    of Energy, Homeland Security, Air Force, Battelle Energy
-                    Alliance/Idaho National Laboratory, National Science
-                    Foundation, and industry entities, in the area of data
-                    mining and machine learning applied to cybersecurity,
-                    critical infrastructure protection, energy security, and
-                    resilient intelligent control.
-                    Manic has given over 40 invited talks around the world, authored more
-                    than 200 refereed articles in international journals, books, and
-                    conferences, holds several U.S. patents and won the 2018 R&D 100 Award
-                    for Autonomic Intelligent Cyber Sensor (AICS), one of top 100 science
-                    and technology worldwide innovations in 2018. He is also an inductee
-                    of U.S. National Academy of Inventors (class of 2019).
-                    He is an IEEE Fellow, recipient of IEEE IES 2019 Anthony J.
-                    Hornfeck Service Award. He also received the 2012 J. David
-                    Irwin Early Career Award and 2017 IEM Best Paper Award. He
-                    served as associate editor of Trans. on Industrial
-                    Electronics, was a founding chair of IEEE IES Technical
-                    Committee on Resilience and Security in Industry, and a
-                    general chair of IEEE IECON 2018, IEEE HSI 2019.
-                  </p>
+        <div class="w-full px-5 py-5">
+            <h1 class="text-4xl font-bold text-center">Emil Levi (Fellow, IEEE)</h1>
+            <h2 class="text-2xl font-semibold text-center">Liverpool John Moores University, UK</h2>
+
+            <div class="flex flex-col lg:flex-row mx-20 my-5">
+                <div class="basis-1/2 m-2 text-justify flex items-center justify-center">
+                    <p>
+                        <span class="text-bold">Emil Levi (Fellow, IEEE)</span> received the M.Sc. and Ph.D. degrees in
+                        electrical engineering from the
+                        University of Belgrade, Belgrade, Yugoslavia, in 1986 and 1990, respectively. He joined
+                        Liverpool John Moores University, U.K., in May 1992 and has been a Professor of Electric
+                        Machines and Drives since September 2000. He served as a Co-Editor-in-Chief of the IEEE
+                        Transactions on Industrial Electronics from 2009 to 2013. Currently, Dr. Levi holds the
+                        positions of Editor-in-Chief of the IEEE Transactions on Industrial Electronics and
+                        Editor-in-Chief of the IET Electric Power Applications. Dr. Levi has received several
+                        prestigious awards, including the Cyril Veinott Award of the IEEE Power and Energy Society for
+                        2009 and the Best Paper Award of the IEEE Transactions on Industrial Electronics for 2008. He
+                        was honored with the “Outstanding Achievement Award” from the European Power Electronics
+                        Association in 2014 and the “Professor Istvan Nagy Award” from the Power Electronics and Motion
+                        Control Council in 2018. He is also a Foreign Member of the Serbian Academy of Engineering.
+                    </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="my-8 text-center">
-    <div class="container mx-auto">
-      <div class="my-8 text-center">
-        <div class="container mx-auto">
-          <h2
-            class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900"
-          >
-            Gourab Majumdar (IEEE,Fellow)
-          </h2>
-          <p
-            class="text-lg md:text-xl lg:text-2xl font-bold mb-4 text-gray-900"
-          >
-            Mitsubishi Electric Corporation, Japan
-          </p>
-        </div>
-      </div>
-
-      <div class="flex flex-col-reverse md:flex-row">
-        <div class="flex items-center md:w-2/3 md:p-8">
-          <div class="border-l-2 border-r-2 border-gray-300 p-4">
-            <div class="my-8 text-center">
-              <div class="container mx-auto">
-                <div class="text-center mb-12 px-4 md:px-0">
-                  <p
-                    class="text-md md:text-lg lg:text-xl font-serif leading-relaxed text-gray-700 text-justify"
-                  >
-                    <span class="font-bold text-gray-900">Gourab Majumdar</span>
-                     received Bachelor of Technology degree in
-                    electrical engineering from Indian Institute of Technology
-                    (IIT), Delhi, India in 1977 and Doctor of Engineering degree
-                    from Kyushu Institute of Technology (KIT), Japan in 2005. He
-                    came to Japan in September 1978, and has been living in the
-                    country since then.
-                    He started his job career at Mitsubishi Electric Corporation, Japan
-                    (Mitsubishi Electric) on a special OJT program in September 1978. He
-                    was employed by the same company in 1980 and, since 1983, has worked
-                    in its units responsible for advanced power semiconductor development,
-                    designing and application. From April-2012 to March-2017, he served as
-                    Executive Fellow, Semiconductor & Device Group of Mitsubishi Electric.
-                    On April-2017, he was reemployed by Mitsubishi Electric on a contract
-                    basis and acted as Senior Fellow (Technology) for Semiconductor &
-                    Device Group of the same company until March-2021.
-                    From April-2022 until currently, he has been working as Senior Fellow
-                    for Power Device Works of Mitsubishi Electric. He has published and
-                    co-authored many technical papers and books on power semiconductor
-                    devices and holds several patents in the related fields. He is a
-                    recipient of the prestigious National Invention Award in Japan in 2005
-                    for invention of the fundamental concept of IPM (Intelligent Power
-                    Module) and has also received several other prestigiouscawards,
-                    including the “Monozukuri Nihon Taishou” (Japan Craftsmanship Grand
-                    Prix) award from the Ministry of Economy, Trade and Industry in 2013
-                    for contribution in development and commercialization of various
-                    versions of IPM devices. He served as the General Chairman of ISPSD
-                    2013 and has been participating as a member of PCIM's Advisory Board
-                    and ISPSD's Advisory Committee.
-                    He received IEEE-ISPSD Contributory Award in 2017 for playing an
-                    active role in the field of Intelligent Power Module and Power IC
-                    technologies and contributing largely to the ISPSD. He was nominated
-                    to be one of the first 32 inductees to IEEE-ISPSD Hall of Fame for his
-                    pioneering global role in progressing IGBT and IPM technologies and
-                    was awarded the prestige in May 2018. He was promoted to IEEE Fellow
-                    in 2021. He lectured courses on advanced power semiconductor devices
-                    as a visiting professor at Kyushu University and Tokyo Institute of
-                    Technology (TIT) for several years till 2019. Also, he has been
-                    bestowed with Honorary Professorship in 2016 by Amity University,
-                    India.
-                  </p>
+                <div class="basis-1/2 m-2 flex items-center justify-center">
+                    <img
+                            src="{% static 'img/EmilLevi_keynote.jpg' %}"
+                            class="h-auto max-w-sm border border-2"
+                    />
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="flex items-center md:w-1/3">
-          <img
-            src="{% static 'img/Gourab_Majumdar.jpeg' %}"
-            alt="Clock Tower"
-            style="
-              width: 500px;
-              height: 450px;
-              padding: 10px;
-              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            "
-          />
+
+        <div class="w-full px-5 py-5">
+            <h1 class="text-4xl font-bold text-center">Milos Manic (Fellow, IEEE)</h1>
+            <h2 class="text-2xl font-semibold text-center">
+                President of the IEEE Industrial Electronics Society (IES)
+            </h2>
+
+            <div class="flex flex-col lg:flex-row mx-20 my-5">
+                <div class="basis-1/2 m-2 flex items-center justify-center">
+                    <img
+                            src="{% static 'img/Milos_Manic.jpeg' %}"
+                            class="h-auto max-w-sm border border-2"
+                    />
+                </div>
+                <div class="basis-1/2 m-2 text-justify flex items-center justify-center">
+                    <p>
+                        <span class="text-bold">Milos Manic</span> is currently the President of the IEEE Industrial
+                        Electronics Society
+                        (IES) and a professor with the Computer Science Department at Virginia Commonwealth University
+                        and is the director of the VCU Cybersecurity Center. He is also a Commonwealth Cyber Initiative
+                        Fellow, inaugural class 2020-2022. As a principal investigator or university partner, he has
+                        completed more than 40 research grants with the departments of Energy, Homeland Security, Air
+                        Force, Battelle Energy Alliance/Idaho National Laboratory, National Science Foundation, and
+                        industry entities, in the area of data mining and machine learning applied to cybersecurity,
+                        critical infrastructure protection, energy security, and resilient intelligent control. Manic
+                        has given over 40 invited talks around the world, authored more than 200 refereed articles in
+                        international journals, books, and conferences, holds several U.S. patents and won the 2018 R&D
+                        100 Award for Autonomic Intelligent Cyber Sensor (AICS), one of top 100 science and technology
+                        worldwide innovations in 2018. He is also an inductee of U.S. National Academy of Inventors
+                        (class of 2019). He is an IEEE Fellow, recipient of IEEE IES 2019 Anthony J. Hornfeck Service
+                        Award. He also received the 2012 J. David Irwin Early Career Award and 2017 IEM Best Paper
+                        Award. He served as associate editor of Trans. on Industrial Electronics, was a founding chair
+                        of IEEE IES Technical Committee on Resilience and Security in Industry, and a general chair of
+                        IEEE IECON 2018, IEEE HSI 2019.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- <div class="flex flex-col justify-center items-center mt-5 gap-4">
-    <div
-      class="flex flex-col md:flex-row w-full items-center justify-around gap-2"
-    >
-      <div>
-        <img
-          src="{% static 'img/Milos_Manic.jpeg' %}"
-          class="border rounded-sm drop-shadow-2xl"
-          height="300"
-          width="300"
-        />
-        <p class="prose text-justify">
-          Prof. Milos Manic President of the IEEE Industrial Electronics Society
-          (IES) Prof in Computer Science Department at Virginia Commonwealth
-          University director of the VCU Cybersecurity Center.
-        </p>
-      </div>
-      <div class="prose text-justify">
-        <h2 class="mb-0">Milos Manic</h2>
-        <p>
-          Milos Manic is currently the President of the IEEE Industrial
-          Electronics Society (IES) and a professor with the Computer Science
-          Department at Virginia Commonwealth University and is the director of
-          the VCU Cybersecurity Center. He is also a Commonwealth Cyber
-          Initiative Fellow, inaugural class 2020-2022.
-        </p>
-        <p>
-          As a principal investigator or university partner, he has completed
-          more than 40 research grants with the departments of Energy, Homeland
-          Security, Air Force, Battelle Energy Alliance/Idaho National
-          Laboratory, National Science Foundation, and industry entities, in the
-          area of data mining and machine learning applied to cybersecurity,
-          critical infrastructure protection, energy security, and resilient
-          intelligent control.
-        </p>
-        <p>
-          Manic has given over 40 invited talks around the world, authored more
-          than 200 refereed articles in international journals, books, and
-          conferences, holds several U.S. patents and won the 2018 R&D 100 Award
-          for Autonomic Intelligent Cyber Sensor (AICS), one of top 100 science
-          and technology worldwide innovations in 2018. He is also an inductee
-          of U.S. National Academy of Inventors (class of 2019).
-        </p>
-        <p>
-          He is an IEEE Fellow, recipient of IEEE IES 2019 Anthony J. Hornfeck
-          Service Award. He also received the 2012 J. David Irwin Early Career
-          Award and 2017 IEM Best Paper Award. He served as associate editor of
-          Trans. on Industrial Electronics, was a founding chair of IEEE IES
-          Technical Committee on Resilience and Security in Industry, and a
-          general chair of IEEE IECON 2018, IEEE HSI 2019.
-        </p>
-      </div>
-    </div>
+        <div class="w-full px-5 py-5">
+            <h1 class="text-4xl font-bold text-center">Gourab Majumdar (Senior Fellow, IEEE)</h1>
+            <h2 class="text-2xl font-semibold text-center">Mitsubishi Electric Corporation, Japan</h2>
 
-    <div
-      class="flex flex-col md:flex-row w-full items-center justify-around gap-2"
-    >
-      <div>
-        <img
-          src="{% static 'img/Gourab_Majumdar.jpeg' %}"
-          class="border rounded-sm drop-shadow-2xl"
-          height="300"
-          width="300"
-        />
-        <p class="prose text-justify">
-          Prof. Gourab Majumdar BTech in electrical engineering from Indian
-          Institute of Technology (IIT), Delhi Doctor of Engineering degree from
-          Kyushu Institute of Technology (KIT)
-        </p>
-      </div>
-      <div class="prose text-justify">
-        <h2 class="mb-0">Gourab Majumdar</h2>
-        <p>
-          Gourab Majumdar received Bachelor of Technology degree in electrical
-          engineering from Indian Institute of Technology (IIT), Delhi, India in
-          1977 and Doctor of Engineering degree from Kyushu Institute of
-          Technology (KIT), Japan in 2005. He came to Japan in September 1978,
-          and has been living in the country since then.
-        </p>
-        <p>
-          He started his job career at Mitsubishi Electric Corporation, Japan
-          (Mitsubishi Electric) on a special OJT program in September 1978. He
-          was employed by the same company in 1980 and, since 1983, has worked
-          in its units responsible for advanced power semiconductor development,
-          designing and application. From April-2012 to March-2017, he served as
-          Executive Fellow, Semiconductor & Device Group of Mitsubishi Electric.
-          On April-2017, he was reemployed by Mitsubishi Electric on a contract
-          basis and acted as Senior Fellow (Technology) for Semiconductor &
-          Device Group of the same company until March-2021.
-        </p>
-        <p>
-          From April-2022 until currently, he has been working as Senior Fellow
-          for Power Device Works of Mitsubishi Electric. He has published and
-          co-authored many technical papers and books on power semiconductor
-          devices and holds several patents in the related fields. He is a
-          recipient of the prestigious National Invention Award in Japan in 2005
-          for invention of the fundamental concept of IPM (Intelligent Power
-          Module) and has also received several other prestigiouscawards,
-          including the “Monozukuri Nihon Taishou” (Japan Craftsmanship Grand
-          Prix) award from the Ministry of Economy, Trade and Industry in 2013
-          for contribution in development and commercialization of various
-          versions of IPM devices. He served as the General Chairman of ISPSD
-          2013 and has been participating as a member of PCIM's Advisory Board
-          and ISPSD's Advisory Committee.
-        </p>
-        <p>
-          He received IEEE-ISPSD Contributory Award in 2017 for playing an
-          active role in the field of Intelligent Power Module and Power IC
-          technologies and contributing largely to the ISPSD. He was nominated
-          to be one of the first 32 inductees to IEEE-ISPSD Hall of Fame for his
-          pioneering global role in progressing IGBT and IPM technologies and
-          was awarded the prestige in May 2018. He was promoted to IEEE Fellow
-          in 2021. He lectured courses on advanced power semiconductor devices
-          as a visiting professor at Kyushu University and Tokyo Institute of
-          Technology (TIT) for several years till 2019. Also, he has been
-          bestowed with Honorary Professorship in 2016 by Amity University,
-          India.
-        </p>
-      </div>
+            <div class="flex flex-col lg:flex-row mx-20 my-5">
+                <div class="basis-1/2 m-2 text-justify flex items-center justify-center">
+                    <p>
+                        <span class="font-bold">Gourab Majumdar</span> received Bachelor of Technology degree in
+                        electrical engineering from Indian
+                        Institute of Technology (IIT), Delhi, India in 1977 and Doctor of Engineering degree from Kyushu
+                        Institute of Technology (KIT), Japan in 2005. He came to Japan in September 1978, and has been
+                        living in the country since then. He started his job career at Mitsubishi Electric Corporation,
+                        Japan (Mitsubishi Electric) on a special OJT program in September 1978. He was employed by the
+                        same company in 1980 and, since 1983, has worked in its units responsible for advanced power
+                        semiconductor development, designing and application. From April-2012 to March-2017, he served
+                        as Executive Fellow, Semiconductor & Device Group of Mitsubishi Electric. On April-2017, he was
+                        reemployed by Mitsubishi Electric on a contract basis and acted as Senior Fellow (Technology)
+                        for Semiconductor & Device Group of the same company until March-2021. From April-2022 until
+                        currently, he has been working as Senior Fellow for Power Device Works of Mitsubishi Electric.
+                        He has published and co-authored many technical papers and books on power semiconductor devices
+                        and holds several patents in the related fields. He is a recipient of the prestigious National
+                        Invention Award in Japan in 2005 for invention of the fundamental concept of IPM (Intelligent
+                        Power Module) and has also received several other prestigiouscawards, including the “Monozukuri
+                        Nihon Taishou” (Japan Craftsmanship Grand Prix) award from the Ministry of Economy, Trade and
+                        Industry in 2013 for contribution in development and commercialization of various versions of
+                        IPM devices. He served as the General Chairman of ISPSD 2013 and has been participating as a
+                        member of PCIM's Advisory Board and ISPSD's Advisory Committee. He received IEEE-ISPSD
+                        Contributory Award in 2017 for playing an active role in the field of Intelligent Power Module
+                        and Power IC technologies and contributing largely to the ISPSD. He was nominated to be one of
+                        the first 32 inductees to IEEE-ISPSD Hall of Fame for his pioneering global role in progressing
+                        IGBT and IPM technologies and was awarded the prestige in May 2018. He was promoted to IEEE
+                        Fellow in 2021. He lectured courses on advanced power semiconductor devices as a visiting
+                        professor at Kyushu University and Tokyo Institute of Technology (TIT) for several years till
+                        2019. Also, he has been bestowed with Honorary Professorship in 2016 by Amity University, India.
+                    </p>
+                </div>
+                <div class="basis-1/2 m-2 flex items-center justify-center">
+                    <img
+                            src="{% static 'img/Gourab_Majumdar.jpeg' %}"
+                            class="h-auto max-w-sm border border-2"
+                    />
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div> -->
-{%endblock%}
+{% endblock %}
