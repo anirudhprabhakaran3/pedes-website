@@ -34,17 +34,17 @@
             <ul class="flex flex-col md:flex-row justify-around font-small p-4 md:p-0 border border-gray-100 rounded-lg border-0 md:bg-blue-700">
                 <li class="flex items-center">
                     <a href="{% url 'home' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0 md:border-0"
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0 md:border-0 text-center"
                        aria-current="page">Home</a>
                 </li>
                 <li class="flex items-center">
                     <a href="{% url 'about' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">About
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 text-center">About
                         us</a>
                 </li>
                 <li class="flex items-center">
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="flex w-full py-2 my-1 md:py-0 my-2 md:my-0 items-center justify-between w-full md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 md:w-auto"
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="forauthorsdropdownNavbar"
+                            class="flex w-full py-2 my-1 md:py-0 my-2 md:my-0 items-center justify-between w-full md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 md:w-auto text-center"
                             style="position: relative; z-index: 20;">
                         For Authors
                         <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
@@ -56,7 +56,7 @@
                         </svg>
                     </button>
                     <!-- Dropdown menu -->
-                    <div id="dropdownNavbar"
+                    <div id="forauthorsdropdownNavbar"
                          class="z-30 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
                          style="position: absolute; top: 100%; left: 0;">
                         <ul class="py-2 text-sm text-gray-700"
@@ -86,40 +86,65 @@
                 </li>
                 <li class="flex items-center">
                     <a href="{% url 'committee' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Committee</a>
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 text-center">Committee</a>
                 </li>
                 <li class="flex items-center">
-                    <a href="{% url 'speakers' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Speakers</a>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="speakersdropdownNavbar"
+                            class="flex w-full py-2 my-1 md:py-0 my-2 md:my-0 items-center justify-between w-full md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 md:w-auto text-center"
+                            style="position: relative; z-index: 20;">
+                        Speakers
+                        <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="2"
+                                  d="m1 1 4 4 4-4"/>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="speakersdropdownNavbar"
+                         class="z-30 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                         style="position: absolute; top: 100%; left: 0;">
+                        <ul class="py-2 text-sm text-gray-700"
+                            aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="{% url 'speakers' %}" class="block px-4 py-2 hover:bg-gray-100">Keynote
+                                    Speakers</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'tutorial' %}" class="block px-4 py-2 hover:bg-gray-100">Tutorial
+                                    Speakers</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="flex items-center">
                     <a href="{% url 'event_details' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Event
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 text-center">Event
                         Details</a>
                 </li>
                 <li class="flex items-center">
                     <a href="{% url 'registration' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Registration</a>
-                </li>
-                <li class="flex items-center">
-                    <a href="{% url 'tutorial' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Tutorial</a>
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 text-center">Registration</a>
                 </li>
                 <li class="flex items-center">
                     <a href="{% url 'student_travel_award' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Student Travel Award</a>
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 text-center">Student
+                        Travel Awards</a>
                 </li>
+                <!--
                 <li class="flex items-center">
                     <a href="{% url 'sponsor_index' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Sponsorship</a>
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 text-center">Sponsorship</a>
                 </li>
+                -->
                 <li class="flex items-center">
                     <a href="{% url 'accomodation' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Accomodation</a>
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 text-center">Accomodation</a>
                 </li>
                 <li class="flex items-center">
                     <a href="{% url 'contact' %}"
-                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0">Contact</a>
+                       class="block w-full py-2 my-1 md:py-0 md:text-white md:text-1xl rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 text-center">Contact</a>
                 </li>
             </ul>
         </div>
