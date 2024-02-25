@@ -8,6 +8,7 @@ class ViewCountMiddleware:
 
     def __call__(self, request):
         ip = request.META.get('REMOTE_ADDR')
+        print(request.META.get('HTTP_X_REAL_IP'))
 
         prev_values = ActivityLog.objects.filter(ip=ip)
 
