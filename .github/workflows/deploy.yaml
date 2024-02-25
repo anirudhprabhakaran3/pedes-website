@@ -22,7 +22,8 @@ jobs:
             whoami
             ls -al
             cd pedes-website/
-            docker compose down
+            pkill gunicorn
             git pull
-            docker compose up --build -d
-            docker compose exec web python manage.py collectstatic --no-input
+            cd web/
+            gunicorn -w 4 -b :8000 pedes.wsgi:application
+            python manage.py collectstatic --no-input
