@@ -83,7 +83,7 @@ DATABASES = {
         "NAME": os.environ.get("MYSQL_NAME", "pedes"),
         "USER": os.environ.get("MYSQL_USER", "pedes"),
         "PASSWORD": os.environ.get("MYSQL_PASSWORD", "password"),
-        "HOST": "db",
+        "HOST": "127.0.0.1",
         "PORT": "3306",
         "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
     }
@@ -125,10 +125,10 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, "prod_static")
+STATIC_ROOT = "/var/www/html/static/"
 
 MEDIA_URL = "media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "prod_media")
+MEDIA_ROOT = "/var/www/html/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
