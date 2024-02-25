@@ -14,7 +14,7 @@ services:
     networks:
       - pedesnet
     healthcheck:
-      test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost']
+      test: [ 'CMD', 'mysqladmin', 'ping', '-h', 'localhost' ]
       timeout: 20s
       retries: 10
 
@@ -31,19 +31,6 @@ services:
       - static:/code/prod_static
       - media:/code/prod_media
       - ./web:/code
-    networks:
-      - pedesnet
-    depends_on:
-      db:
-        condition: service_healthy
-
-  nginx:
-    build: ./nginx
-    ports:
-      - 3000:80
-    volumes:
-      - static:/web/static
-      - media:/web/media
     networks:
       - pedesnet
     depends_on:

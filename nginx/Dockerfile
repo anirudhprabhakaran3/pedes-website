@@ -1,5 +1,6 @@
-FROM nginx:alpine
+FROM nginx:stable-alpine
 
-COPY nginx.conf /etc/nginx/nginx.conf
-RUN apk update && apk add bash
-RUN mkdir /web && mkdir /web/static && mkdir /web/media
+RUN apk --no-cache add certbot
+
+COPY default.conf /etc/nginx
+COPY default.conf /etc/nginx/conf.d
