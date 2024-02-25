@@ -22,6 +22,7 @@ jobs:
             whoami
             ls -al
             cd pedes-website/
+            source venv/bin/activate
             pkill gunicorn
             git pull
             cd web/
