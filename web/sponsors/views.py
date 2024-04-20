@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 def index(request):
     args = {}
-    return render(request, "sponsor/index.html", args)
+    return render(request, "sponsor/sponsor_index.html", args)
