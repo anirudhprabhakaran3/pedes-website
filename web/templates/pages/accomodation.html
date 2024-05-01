@@ -1,12 +1,355 @@
 {% extends 'base.html' %}
+{% load static %}
 {%block title%}
 Accomodation
 {%endblock%}
 
 {%block content%}
-<div class="py-8">
-    <h1 class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-        Will be announced later
+
+
+
+
+
+
+<div class="mt-10 text-center p-4">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 card rounded-lg shadow-md">
+        <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">
+            How to reach NITK
+        </h2>
+        <div class="text-center">
+            <p class="text-justify text-lg sm:text-xl md:text-2xl lg:text-2xl font-arial font-semibold">
+                NITK is well connected to the city of Mangalore, which can easily be reached via train, flight or bus. 
+            </p>
+            <ul class="list list-decimal ml-16 my-5 text-justify custom-bullet-points">
+                <li class="text-xl sm:text-2xl">Buses from Bangalore and other parts of Karnataka have a stop right in front of the college main gate.</li>
+                <li class="text-xl sm:text-2xl">There are domestic and international flights at Mangalore International Airport, which is well connected to other cities within and outside India.</li>
+                <li class="text-xl sm:text-2xl">If you choose to come via train, Mangalore has two train stations - Mangalore Central railway station, and Mangalore Junction.</li>
+                <li class="text-xl sm:text-2xl">Surathkal also has its railway station, however it is not very well connected to some of the more popular train routes.</li>
+            </ul>
+            <p class="text-justify text-lg sm:text-xl md:text-2xl lg:text-2xl font-arial font-semibold">
+                From Mangalore and Surathkal, there are plenty of autorickshaws, taxi cabs and buses that can drop you to the institute entrance. More information can be found <a href="https://en.wikivoyage.org/wiki/Mangalore" target="_blank" class="underline underline-offset-2 text-sky-800">here</a>.
+            </p>
+        </div>
+    
+    
+     
+        
+        <div class="flex flex-col md:flex-row justify-center"> 
+            <div class="w-full md:w-1/2 md:m-5">
+                <h2 class="my-2 text-2xl font-bold leading-none tracking-tight text-gray-900">
+                    Distance from popular destinations
+                </h2>
+                <div class="relative overflow-x-auto">
+                    <table class="md:mx-auto text-lg text-left text-gray-500 mt-5 border border-6">
+                        <thead class="text-sm md:text-base text-gray-700 uppercase bg-gray-300">
+                            <tr>
+                                <th scope="col" class="px-4 md:px-6 py-3 font-bold border border-6 border-gray-400 bg-gray-200">
+                                    Destination
+                                </th>
+                                <th scope="col" class="px-4 md:px-6 py-3 font-bold border border-6 border-gray-400 bg-gray-200">
+                                    Distance
+                                </th>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <th scope="row" class="px-4 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap border border-6 border-gray-300">
+                                    Mangalore Airport
+                                </th>
+                                <td class="px-4 md:px-6 py-4 border border-6  font-medium text-gray-900 border-gray-300">
+                                    20km
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <th scope="row" class="px-4 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap border border-6 border-gray-300">
+                                    Mangalore Central Railway Station
+                                </th>
+                                <td class="px-4 md:px-6 py-4 border border-6  font-medium text-gray-900 border-gray-300">
+                                    21km
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <th scope="row" class="px-4 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap border border-6 border-gray-300">
+                                    Mangalore Junction Railway Station
+                                </th>
+                                <td class="px-4 md:px-6 py-4 border border-6 font-medium text-gray-900 border-gray-300">
+                                    25km
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <th scope="row" class="px-4 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap border border-6 border-gray-300">
+                                    Surathkal Railway Station
+                                </th>
+                                <td class="px-4 md:px-6 py-4 border border-6 font-medium text-gray-900  border-gray-300">
+                                    4km
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <th scope="row" class="px-4 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap border border-6 border-gray-300">
+                                    Mangalore Bus Stand
+                                </th>
+                                <td class="px-4 md:px-6 py-4 border border-6  font-medium text-gray-900 border-gray-300">
+                                    22km
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                                <th scope="row" class="px-4 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap border border-6 border-gray-300">
+                                    Udupi Bus Stand
+                                </th>
+                                <td class="px-4 md:px-6 py-4 border border-6 font-medium text-gray-900  border-gray-300">
+                                    35km
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+<div class="my-5 mx-auto w-11/12">
+    <h1 class="mb-12 text-center text-4xl font-extrabold leading-none tracking-tight text-blue-700 md:text-5xl lg:text-6xl">
+        Accomodation
     </h1>
+</div>    
+
+
+
+        
+
+<div class="my-8 text-center bg-gray-100 rounded-lg shadow-xl p-4">
+    <div class="container mx-auto"> 
+        <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">
+            Beach Heaven Surathkal
+        </h2>
+        <div class="flex md:justify-between flex-col md:flex-row">
+            <div class="flex items-center sm:w-full md:w-1/2">
+                <img src="{% static 'img/eee_dept.jpg' %}" alt="Department of Electrical and Electronics Engineering" style="width: 500px; height:450px; padding: 10px;box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+            </div>                
+            
+            <div class="flex items-center md:w-1/2 md:p-8">
+                <div class="card rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row">
+                      <div class="flex flex-col p-4 md:p-8">
+                        <h3 class="text-xl font-bold mb-2">Serviced Apartment with all Modern Amenities</h3>
+                        <p class="text-gray-700 mb-2 text-justify">Spacious Serviced Apartment with all modern amenities. 
+                            A perfect blend of Home Stay & Luxury making it the best choice for travellers. Idea for long stay as it consists of Deluxe AC Bedroom 
+                            with attached Bathroom, Spacious Living Room with sofa, chair & table and TV with cable connection & Wifi. Pantry with amenities like Microwave Oven ,
+                             Induction Cooking Range, Fridge, Kettle, Crockery, Cutlery & more. Peaceful place which is 100 meters away from the Beach. 
+                             A very convenient location as its close to the highway.</p>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16v-2H4m4 0v-4h4m-4 4v4h4z" />
+                          </svg>
+                          <span class="text-gray-700">Book with ₹0 Payment</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.9 7.1A5.49 5.49 0 0 0 6 12c0 3.31.54 6.17 1.58 8.27m1.84-1.78a11.68 11.68 0 0 1 4.28-4.28m-10.91 3.87a11.68 11.68 0 0 1 4.28 4.28m7.17-10.56a5.49 5.49 0 0 0-8.27 1.58C1.54 5.83 0 8.17 0 12c0 3.31.54 6.17 1.58 8.27m1.84-1.78a11.68 11.68 0 0 1 4.28-4.28m-10.91 3.87a11.68 11.68 0 0 1 4.28 4.28" />
+                          </svg>
+                          <span class="text-gray-700">price is subject to change</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                          <div class="text-gray-700 text-sm">Per Night:</div>
+                          <div class="flex items-center space-x-1">
+                            <span class="text-xl font-bold text-blue-500">₹ 2,784</span>
+                            <span class="text-gray-500 text-sm">+ ₹ 693 taxes & fees</span>
+                          </div>
+                        </div>
+                        <a href="https://www.makemytrip.com/hotels/beach_heaven_surathkal-details-mangalore.html" target="_blank" class="btn mt-4 bg-blue-500 text-white hover:bg-blue-700 font-bold py-2 px-4 rounded shadow-sm">Book Now</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+          
+        
+<div class="my-8 text-center rounded-lg shadow-xl p-4">
+    <div class="container mx-auto">
+        <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 ">
+            Skanda Comforts- Boarding & Lodging
+        </h2>
+        <div class="flex md:justify-between flex-col md:flex-row">
+            <div class="flex items-center md:w-1/3">
+                <img src="{% static 'img\clock_tower.jpg' %}" alt="Clock Tower" style="width: 500px; height:450px; padding: 10px;box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+            </div>    
+            <div class="flex items-center md:w-1/2 md:p-8">
+                <div class="card rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row">
+                      <div class="flex flex-col p-4 md:p-8">
+                        <h3 class="text-xl font-bold mb-2">Serviced Apartment with all Modern Amenities</h3>
+                        <p class="text-gray-700 mb-2 text-justify">The property is just 2.3 km away from Surathkal Railway Station.
+                            The property puts you close to attractions and interesting dining options
+                            A Multilingual staff makes communication easy.</p>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16v-2H4m4 0v-4h4m-4 4v4h4z" />
+                          </svg>
+                          <span class="text-gray-700">Book with ₹0 Payment</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.9 7.1A5.49 5.49 0 0 0 6 12c0 3.31.54 6.17 1.58 8.27m1.84-1.78a11.68 11.68 0 0 1 4.28-4.28m-10.91 3.87a11.68 11.68 0 0 1 4.28 4.28m7.17-10.56a5.49 5.49 0 0 0-8.27 1.58C1.54 5.83 0 8.17 0 12c0 3.31.54 6.17 1.58 8.27m1.84-1.78a11.68 11.68 0 0 1 4.28-4.28m-10.91 3.87a11.68 11.68 0 0 1 4.28 4.28" />
+                          </svg>
+                          <span class="text-gray-700">price is subject to change</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                          <div class="text-gray-700 text-sm">Per Night:</div>
+                          <div class="flex items-center space-x-1">
+                            <span class="text-xl font-bold text-blue-500">₹ 1,265</span>
+                            <span class="text-gray-500 text-sm">+ ₹ 315 taxes & fees</span>
+                          </div>
+                        </div>
+                        <a href="https://www.makemytrip.com/hotels/skanda_comforts_boarding_lodging-details-mangalore.html" target="_blank" class="btn mt-4 bg-blue-500 text-white hover:bg-blue-700 font-bold py-2 px-4 rounded shadow-sm">Book Now</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+                       
+        </div>
+    </div>
+</div>
+
+
+<div class="my-8 text-center bg-gray-100 rounded-lg shadow-xl p-4">
+    <div class="container mx-auto "> 
+        <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">
+            Hotel shree Krishna Palace
+        </h2>
+        <div class="flex md:justify-between flex-col md:flex-row">
+            <div class="flex items-center sm:w-full md:w-1/2">
+                <img src="{% static 'img/eee_dept.jpg' %}" alt="Department of Electrical and Electronics Engineering" style="width: 500px; height:450px; padding: 10px;box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+            </div>                
+            
+            <div class="flex items-center md:w-1/2 md:p-8">
+                <div class="card rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row">
+                      <div class="flex flex-col p-4 md:p-8">
+                        <h3 class="text-xl font-bold mb-2">Serviced Apartment with all Modern Amenities</h3>
+                        <p class="text-gray-700 mb-2 text-justify">The property is located at an accessible distance from Mangalore International Airport, 
+                            Railway Station and Bus Stand. A modern boutique hotel with unmatched facilities, blend of modern architecture and Indian heritage to
+                             give you unparalleled standard of style and sophistication. For a relax and comfortable stay an array of facilities are applied such as 
+                             round the clock room service, parking and front desk. Well-maintained and spacious rooms available at the property are complete with 
+                             modern amenities such television, hot/cold water, attached bathroom and various other essential bathroom toiletries. Adding to this is a 
+                             pleasing ambience and never-ending conversations which will sum up to a memorable experience</p>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16v-2H4m4 0v-4h4m-4 4v4h4z" />
+                          </svg>
+                          <span class="text-gray-700">Book with ₹0 Payment</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.9 7.1A5.49 5.49 0 0 0 6 12c0 3.31.54 6.17 1.58 8.27m1.84-1.78a11.68 11.68 0 0 1 4.28-4.28m-10.91 3.87a11.68 11.68 0 0 1 4.28 4.28m7.17-10.56a5.49 5.49 0 0 0-8.27 1.58C1.54 5.83 0 8.17 0 12c0 3.31.54 6.17 1.58 8.27m1.84-1.78a11.68 11.68 0 0 1 4.28-4.28m-10.91 3.87a11.68 11.68 0 0 1 4.28 4.28" />
+                          </svg>
+                          <span class="text-gray-700">price is subject to change</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                          <div class="text-gray-700 text-sm">Per Night:</div>
+                          <div class="flex items-center space-x-1">
+                            <span class="text-xl font-bold text-blue-500">₹ 1,052</span>
+                            <span class="text-gray-500 text-sm">+ ₹ 277 taxes & fees</span>
+                          </div>
+                        </div>
+                        <a href="https://www.makemytrip.com/hotels/hotel_shree_krishna_palace-details-mangalore.html" target="_blank" class="btn mt-4 bg-blue-500 text-white hover:bg-blue-700 font-bold py-2 px-4 rounded shadow-sm">Book Now</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+          
+        
+<div class="my-8 text-center rounded-lg shadow-xl p-4">
+    <div class="container mx-auto">
+        <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 ">
+            Vaishnavi-Riveries
+        </h2>
+        <div class="flex md:justify-between flex-col md:flex-row">
+            <div class="flex items-center md:w-1/3">
+                <img src="{% static 'img\clock_tower.jpg' %}" alt="Clock Tower" style="width: 500px; height:450px; padding: 10px;box-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+            </div>    
+            <div class="flex items-center md:w-1/2 md:p-8">
+                <div class="card rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row">
+                      <div class="flex flex-col p-4 md:p-8">
+                        <h3 class="text-xl font-bold mb-2">Serviced Apartment with all Modern Amenities</h3>
+                        <p class="text-gray-700 mb-2 text-justify">SHARVARI BEACH HOME STAYS This set of 1bhk flats is suitable for 2 people per flat. 
+                            Above 2 people 1 extra person can be accomodated (extra 1 more at an extra tariff of Rs600 per head per day).
+                             Cleaning charges 600 one time payment shall be paid at the time of check out for a stay of every 3 days. 
+                             The service apartment cum homestay offers an experience similar to that of an exotic luxury 
+                             resort *1 A/C bedroom * spacious living room * a dining area, a kitchen * a personal sit out with barbecue 
+                             and view of the greenery. *partial view of the sea. *WiFi broadband internet and OTT services on TV.
+                              *There are house keeping staffs (available from 8:30 am to 4 pm). *Home cooked can also be arranged 
+                              (extra charges shall be applicable) on a prior intimation basis. *The kitchen has Fridge, Oven, and Induction stove
+                               for basic cooking with basic utensils for heating. 
+                               *The property doesn’t have a restaurant but has access to all major hotels through swiggy, zomato and even
+                                direct hotel deliveries. our care taker can provide delicious home cooked food for the convenience of guests 
+                                which is his own venture.</p>
+                        <div class="flex items-center space-x-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16v-2H4m4 0v-4h4m-4 4v4h4z" />
+                          </svg>
+                          <span class="text-gray-700">Book with ₹0 Payment</span>
+                        </div>
+                        <div class="flex items-center space-x-2 mt-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.9 7.1A5.49 5.49 0 0 0 6 12c0 3.31.54 6.17 1.58 8.27m1.84-1.78a11.68 11.68 0 0 1 4.28-4.28m-10.91 3.87a11.68 11.68 0 0 1 4.28 4.28m7.17-10.56a5.49 5.49 0 0 0-8.27 1.58C1.54 5.83 0 8.17 0 12c0 3.31.54 6.17 1.58 8.27m1.84-1.78a11.68 11.68 0 0 1 4.28-4.28m-10.91 3.87a11.68 11.68 0 0 1 4.28 4.28" />
+                          </svg>
+                          <span class="text-gray-700">price is subject to change</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-4">
+                          <div class="text-gray-700 text-sm">Per Night:</div>
+                          <div class="flex items-center space-x-1">
+                            <span class="text-xl font-bold text-blue-500">₹ 3,158</span>
+                            <span class="text-gray-500 text-sm">+ ₹ 846 taxes & fees</span>
+                          </div>
+                        </div>
+                        <a href="https://www.makemytrip.com/hotels/vaishnavi_reveries-details-mangalore.html" target="_blank" class="btn mt-4 bg-blue-500 text-white hover:bg-blue-700 font-bold py-2 px-4 rounded shadow-sm">Book Now</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+                       
+        </div>
+    </div>
+</div>
+
+
+<div class="my-8 text-center rounded-lg shadow-xl p-4">
+    <div class="container mx-auto"> 
+        <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">
+            NITK Location By Map
+        </h2>
+        <div class="flex md:justify-between flex-col md:flex-row">
+            <div class="relative md:w-1/2 h-80">
+                <iframe class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.google.com/maps/embed/v1/place?q=National+Institute+of+Technology+Karnataka,+Srinivasnagar,+Surathkal,+Mangaluru,+Karnataka,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+            </div>               
+            
+            <div class="flex items-center md:w-1/2 md:p-8 text-justify card rounded-lg shadow-md">A lush green campus on the shores of the Arabian sea, nourished and blessed by the monsoon showers.
+NITK is located on the coastal belt of Karnataka, on the National Highway 66, at about 22 kms from Mangalore towards Udupi. 
+It lies close to Mangalore International Airport, Mangalore Railway Station and the Mangalore Port. 
+Bus Routes from Mumbai, Goa and Bangalore (that terminate at Udupi-Manipal) pass through the College and visitors can disembark right away.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    
+
 </div>
 {%endblock%}
