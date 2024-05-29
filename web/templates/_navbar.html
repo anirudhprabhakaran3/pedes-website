@@ -150,3 +150,27 @@
         </div>
     </div>
 </nav>
+{% block announcements %}
+    {% if announcements %}
+            {% for announcement in announcements %}
+                    <div id="alert-additional-content-1"
+                    class="p-4 text-red-700 bg-yellow-50 border border-red-200 border-t-4 border-b-4 rounded-lg shadow-md"
+                    role="alert">
+                <div class="flex items-center animate__fadeInUp animate__faster">  <svg class="flex-shrink-0 w-6 h-6 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.5 2a1.5 1.5 0 0 0-3 0v18a1.5 1.5 0 0 0 3 1.5h3a1.5 1.5 0 0 0 3-1.5V2zm4.5 4.5h-3a.5.5 0 0 0 0 1h3V9a.5.5 0 0 0-1 0V7.5h-3a.5.5 0 0 0 0-1h3V5a.5.5 0 0 0-1 0v1.5z" clip-rule="evenodd" />
+                </svg>  <h3 class="text-lg font-medium text-red-900">Important! {{ announcement.content }}</h3>
+                </div>
+                {% if announcement.url %}
+                <div class="flex">
+                <a href="{{ announcement.url }}" type="button"
+                    class="text-red-900 bg-transparent border border-red-900 hover:bg-red-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-red-200 font-medium rounded-lg text-sm px-4 py-2 text-center">
+                    Read the Full Story
+                </a>
+                </div>
+                {% endif %}
+            </div>
+   
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
