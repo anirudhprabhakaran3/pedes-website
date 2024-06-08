@@ -57,11 +57,70 @@
                 margin-right: 5;
             }
             
-
         }
+        @-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: sticky;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: #FFFBEB;
+  z-index: 1000;
+  border-top-width: 4px; /* border-t-4 */
+  border-bottom-width: 4px; /* border-b-4 */
+  border-left-width: 1px; /* default border width for left and right if not specified */
+  border-right-width: 1px; /* default border width for left and right if not specified */
+  border-style: solid; /* ensure the border is solid */
+  border-radius: 8px;
+}
+
+.ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+
+.ticker_item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: #b91c1c;
+}
+
+
     </style>
 
-    <section>
+    <!-- <section>
             <div id="alert-additional-content-1"
             class="p-4 text-red-700 bg-yellow-50 border border-red-200 border-t-4 border-b-4 rounded-lg shadow-md"
             role="alert">
@@ -70,7 +129,19 @@
             </svg>  <a href="important_dates" class=" h3 text-lg font-medium text-red-900">Last Date for Submission of Digest: 15th June 2024 (Final Deadline)</a>
             </div>
             </div>
+   </section> -->
+   <section>
+    <div class="ticker-wrap">
+        <div class="ticker">
+           <div class="ticker_item flex flex-row items-center">
+            <a href="important_dates">
+                Last Date for Submission of Digest: 15th June 2024 (Final Deadline)            
+            </a>
+        </div>
+        </div>
+    </div>
    </section>
+
     <section class="bg-white">
         
         <div id="default-carousel" class="relative w-full h-400" data-carousel="slide">
