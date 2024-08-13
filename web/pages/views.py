@@ -68,3 +68,6 @@ def tutorial(request):
 
 def student_travel_award(request):
     return render(request, "pages/student_travel_award.html")
+
+def reg_portal(request):
+    return render(request, "pages/reg_portal.html")
