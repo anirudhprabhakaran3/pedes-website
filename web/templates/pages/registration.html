@@ -169,10 +169,11 @@
                     <p class="mb-4 font-helvetica text-xl text-gray-700 mr-2 ml-2 text-justify">Please register using
                         the button below:</p>
                     <div class="flex items-center justify-center"> <!-- Added flex classes -->
-                        <button disabled type="button"
-                                class="text-md px-3 py-1 cursor-not-allowed rounded-full border border-blue-500">
+                    <a href="{% url 'reg_portal' %}">
+                        <button type="button" class="text-md px-3 py-1 rounded-full border border-blue-500">
                             Will be updated
                         </button>
+                    </a>                        
                     </div>
                 </div>
             </div>
