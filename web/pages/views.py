@@ -102,4 +102,4 @@ def reg_portal(request):
     else:
         form = AttendeForm()
 
-    return render(request, "pages/reg_portal.html", {'form': form, 'form_submitted': form_submitted, 'iframe_url': iframe_url})
+    return render(request, "pages/reg_portal.html", {'form': form, 'form_submitted': form_submitted, 'iframe_url': 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h'})
