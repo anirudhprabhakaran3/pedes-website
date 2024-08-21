@@ -1,21 +1,60 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Contact
+    Registration Portal
 {% endblock %}
 
 {% block content %}
-<div class="w-7/8 mx-auto py-8 mt-8 flex flex-col items-center space-y-4 border border-black-500 shadow-lg">
-    <!-- Warning Section -->
-    <div class="bg-yellow-500 text-black font-bold px-4 py-2 rounded-lg w-full text-center">
-        ⚠️ Only for Testing
-    </div>
-    
-    <!-- Responsive Iframe Section -->
-    <div style="position: relative; width: 100%; padding-bottom: 76.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+<div class="container mx-auto p-4 max-w-md">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Registration Portal</h2>
+    <div class="bg-white shadow-lg rounded-lg p-8">
+        <form method="post" id="regForm">
+            {% csrf_token %}
+            <div class="space-y-6">
+                <!-- Render form fields with custom styles -->
+                {{ form.as_p }}
+            </div>
+            <div class="flex justify-end mt-6">
+                <button type="submit" class="bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200" id="submitBtn" disabled>Submit</button>
+            </div>
+        </form>
     </div>
 </div>
 
+{% if form_submitted %}
+        {% if iframe_url %}
+        <div class="mt-6">
+            <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe src="{{ iframe_url }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+            </div>
+        </div>
+        {% endif %}
+    {% endif %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('regForm');
+        const submitBtn = document.getElementById('submitBtn');
 
+        // Function to check if all required fields are filled
+        function checkForm() {
+            const formData = new FormData(form);
+            let allFilled = true;
+            for (let [name, value] of formData.entries()) {
+                if (value.trim() === '') {
+                    allFilled = false;
+                    break;
+                }
+            }
+            submitBtn.disabled = !allFilled; // Enable/disable submit button
+        }
+
+        // Attach event listeners to form fields to check form completion
+        form.addEventListener('input', checkForm);
+
+        // Initial check in case the form is pre-filled
+        checkForm();
+    });
+</script>
 {% endblock %}
+
+
