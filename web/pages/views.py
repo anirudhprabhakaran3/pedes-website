@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from pages.models import Announcement
-
+from .forms  import  AttendeForm
+from django.shortcuts import render, redirect
 
 # Create your views here.
+
 
 
 def home(request):
@@ -69,5 +71,35 @@ def tutorial(request):
 def student_travel_award(request):
     return render(request, "pages/student_travel_award.html")
 
+IFRAME_MAPPINGS = {
+    ('IN', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('IN', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('IN', 'PROF_ATN'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('IN', 'AUTHOR_ATN'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('IN', 'TUTORIAL'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('FR', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('FR', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('FR', 'PROF_ATN'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('FR', 'AUTHOR_ATN'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('FR', 'TUTORIAL'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    
+    # Add more combinations as needed
+}
 def reg_portal(request):
-    return render(request, "pages/reg_portal.html")
+    form_submitted = False
+    iframe_url = None
+    if request.method == 'POST':
+        form = AttendeForm(request.POST)
+        if form.is_valid():
+            attende = form.save()
+            # Get nationality and category from the form data
+            nationality = attende.nationality
+            category = attende.category
+            # print(f"Nationality: {nationality}, Category: {category}")
+            # Determine iframe URL based on nationality and category
+            iframe_url = IFRAME_MAPPINGS.get((nationality, category))
+            form_submitted = True
+    else:
+        form = AttendeForm()
+
+    return render(request, "pages/reg_portal.html", {'form': form, 'form_submitted': form_submitted, 'iframe_url': iframe_url})
