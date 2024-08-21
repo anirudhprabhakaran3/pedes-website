@@ -72,16 +72,16 @@ def student_travel_award(request):
     return render(request, "pages/student_travel_award.html")
 
 IFRAME_MAPPINGS = {
-    ('IN', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('IN', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('IN', 'PROF_ATN'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('IN', 'AUTHOR_ATN'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('IN', 'TUTORIAL'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('FR', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('FR', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('FR', 'PROF_ATN'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('FR', 'AUTHOR_ATN'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
-    ('FR', 'TUTORIAL'): 'https://www.yepdesk.com/buy-tickets/66baedc7c9e77c0001351022/private/4b5uanvmve',
+    ('IN', 'AUTHOR'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('IN', 'STUDENT'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('IN', 'PROF_ATN'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('IN', 'AUTHOR_ATN'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('IN', 'TUTORIAL'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('FR', 'AUTHOR'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('FR', 'STUDENT'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('FR', 'PROF_ATN'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('FR', 'AUTHOR_ATN'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+    ('FR', 'TUTORIAL'): 'https://www.yepdesk.com/embed/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
     
     # Add more combinations as needed
 }
@@ -102,4 +102,4 @@ def reg_portal(request):
     else:
         form = AttendeForm()
 
-    return render(request, "pages/reg_portal.html", {'form': form, 'form_submitted': form_submitted, 'iframe_url': 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h'})
+    return render(request, "pages/reg_portal.html", {'form': form, 'form_submitted': form_submitted, 'iframe_url': iframe_url})
