@@ -75,35 +75,35 @@ def student_travel_award(request):
 def travel_apply(request):
     return render(request, "pages/travel_apply.html")
 
-IFRAME_MAPPINGS = {
-    ('IN', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('IN', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('IN', 'PROF_ATN'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('IN', 'AUTHOR_ATN'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('IN', 'TUTORIAL'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('FR', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('FR', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('FR', 'PROF_ATN'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('FR', 'AUTHOR_ATN'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
-    ('FR', 'TUTORIAL'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+# IFRAME_MAPPINGS = {
+#     ('IN', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('IN', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('IN', 'PROF_ATN'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('IN', 'AUTHOR_ATN'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('IN', 'TUTORIAL'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('FR', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('FR', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('FR', 'PROF_ATN'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('FR', 'AUTHOR_ATN'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
+#     ('FR', 'TUTORIAL'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
     
-    # Add more combinations as needed
-}
+#     # Add more combinations as needed
+# }
 def reg_portal(request):
-    form_submitted = False
-    iframe_url = None
-    if request.method == 'POST':
-        form = AttendeForm(request.POST)
-        if form.is_valid():
-            attende = form.save()
-            # Get nationality and category from the form data
-            nationality = attende.nationality
-            category = attende.category
-            # print(f"Nationality: {nationality}, Category: {category}")
-            # Determine iframe URL based on nationality and category
-            iframe_url = IFRAME_MAPPINGS.get((nationality, category))
-            form_submitted = True
-    else:
-        form = AttendeForm()
-
-    return render(request, "pages/reg_portal.html", {'form': form, 'form_submitted': form_submitted, 'iframe_url': iframe_url })
+    #  form_submitted = False
+    # iframe_url = None
+    # if request.method == 'POST':
+    #     form = AttendeForm(request.POST)
+    #     if form.is_valid():
+    #         attende = form.save()
+    #         # Get nationality and category from the form data
+    #         nationality = attende.nationality
+    #         category = attende.category
+    #         # print(f"Nationality: {nationality}, Category: {category}")
+    #         # Determine iframe URL based on nationality and category
+    #         iframe_url = IFRAME_MAPPINGS.get((nationality, category))
+    #         form_submitted = True
+    # else:
+    #     form = AttendeForm()
+    return render(request,"pages/reg_portal.html")
+    #  return render(request, "pages/reg_portal.html", {'form': form, 'form_submitted': form_submitted, 'iframe_url': iframe_url })

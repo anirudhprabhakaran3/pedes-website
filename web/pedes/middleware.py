@@ -8,10 +8,11 @@ class ViewCountMiddleware:
 
     def __call__(self, request):
         ip = request.META.get('HTTP_X_REAL_IP')
-        prev_values = ActivityLog.objects.filter(ip=ip)
-
-        if not prev_values.exists():
-            ActivityLog.objects.create(ip=ip, timestamp=timezone.now())
+        if ip:  # Check if IP is available
+            prev_values = ActivityLog.objects.filter(ip=ip)
+            if not prev_values.exists():
+                ActivityLog.objects.create(ip=ip, timestamp=timezone.now())
+        # No need to create an ActivityLog object if IP is missing
 
         response = self.get_response(request)
         return response
