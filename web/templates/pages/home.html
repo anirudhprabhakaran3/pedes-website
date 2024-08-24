@@ -7,117 +7,123 @@
 
 
 {% block content %}
-    <style>
-        .relative.h-56.md\:h-96 {
+<style>
+    /* Responsive height adjustment for different screen sizes */
+    .relative.h-56.md\:h-96 {
 
-            @media (min-width: 768px) {
-                .relative.h-56.md\:h-96 {
-                    height: 80vh;
-                }
-            }
-
-            @media (min-width: 1024px) {
-                .relative.h-56.md\:h-96 {
-                    height: 90vh;
-                }
+        /* For medium screens (min-width: 768px) */
+        @media (min-width: 768px) {
+            .relative.h-56.md\:h-96 {
+                height: 80vh;
             }
         }
 
-        .text-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+        /* For large screens (min-width: 1024px) */
+        @media (min-width: 1024px) {
+            .relative.h-56.md\:h-96 {
+                height: 90vh;
+            }
         }
+    }
 
+    /* Center text content */
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Styles for logo on the left */
+    .logo_l {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Styles for logo on the right */
+    .logo_r {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Adjust logo sizes for screens smaller than 1024px */
+    @media (max-width: 1024px) {
         .logo_l {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
+            margin-left: 5px; /* Added "px" for proper margin */
         }
 
         .logo_r {
-            width: 150px;
-            height: 150px;
+            width: 75px;
+            height: 75px;
+            margin-right: 5px; /* Added "px" for proper margin */
         }
+    }
 
-        @media (max-width: 1024px) {
-            .logo_l {
-                width: 100px;
-                /* Set your desired width for smaller screens */
-                height: 100px;
-                /* Set your desired height for smaller screens */
-                margin-left: 5;
-            }
-
-            .logo_r {
-                width: 75px;
-                /* Set your desired width for smaller screens */
-                height: 75px;
-                /* Set your desired height for smaller screens */
-                margin-right: 5;
-            }
-            
+    /* Keyframes for ticker animation */
+    @-webkit-keyframes ticker {
+        0% {
+            -webkit-transform: translate3d(100vw, 0, 0);
+            transform: translate3d(100vw, 0, 0);
         }
-        @-webkit-keyframes ticker {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
+        100% {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
 
-@keyframes ticker {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
+    @keyframes ticker {
+        0% {
+            -webkit-transform: translate3d(100vw, 0, 0);
+            transform: translate3d(100vw, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
 
-.ticker-wrap {
-  position: sticky;
-  width: 100%;
-  overflow: hidden;
-  height: 4rem;
-  background-color: #FFFBEB;
-  border-top-width: 4px; /* border-t-4 */
-  border-bottom-width: 4px; /* border-b-4 */
-  border-left-width: 1px; /* default border width for left and right if not specified */
-  border-right-width: 1px; /* default border width for left and right if not specified */
-  border-style: solid; /* ensure the border is solid */
-  border-radius: 8px;
-}
+    /* Ticker wrapper to contain the ticker animation */
+    .ticker-wrap {
+        position: sticky;
+        width: 100%;
+        overflow: hidden;
+        height: 4rem;
+        background-color: #FFFBEB;
+        border-top-width: 4px;
+        border-bottom-width: 4px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-style: solid;
+        border-radius: 8px;
+    }
 
-.ticker {
-  display: inline-block;
-  height: 4rem;
-  line-height: 4rem;
-  white-space: nowrap;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-name: ticker;
-  animation-name: ticker;
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-}
+    /* Ticker container with infinite looping animation */
+    .ticker {
+        display: inline-block;
+        height: 4rem;
+        line-height: 4rem;
+        white-space: nowrap;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: ticker;
+        animation-name: ticker;
+        -webkit-animation-duration: 10s;
+        animation-duration: 10s;
+    }
 
-.ticker_item {
-  display: inline-block;
-  padding: 0 2rem;
-  font-size: 2rem;
-  color: #b91c1c;
-}
+    /* Ticker item styles */
+    .ticker_item {
+        display: inline-block;
+        padding: 0 2rem;
+        font-size: 2rem;
+        color: #b91c1c;
+    }
+</style>
 
-
-    </style>
 
     <!-- <section>
             <div id="alert-additional-content-1"
@@ -134,7 +140,7 @@
         <div class="ticker">
            <div class="ticker_item flex flex-row items-center">
             <a href="travel_apply">
-               Click here to go to the Student Travel Award page.
+                Apply for Student Travel Awards.
             </a>
         </div>
         </div>
