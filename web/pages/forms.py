@@ -1,5 +1,5 @@
 from django import forms
-from .models import Attende,TickerText
+from .models import Attende
 
 class AttendeForm(forms.ModelForm):
     class Meta:

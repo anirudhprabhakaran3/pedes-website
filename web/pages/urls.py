@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, committee, important_dates, tracks, contact,about,call_for_papers, speakers, event_details,accomodation, registration,paper_submission,keynote,tutorial,student_travel_award, reg_portal,travel_apply ,camera_paper, update_announcement
+from .views import home, committee, important_dates, tracks, contact,about,call_for_papers, speakers, event_details,accomodation, registration,paper_submission,keynote,tutorial,student_travel_award, reg_portal,travel_apply ,camera_paper
 from django.conf import settings
 from django.conf.urls.static import static
 

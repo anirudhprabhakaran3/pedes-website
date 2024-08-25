@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from pages.models import Announcement
-from .forms  import  AttendeForm, TickerTextForm
+from .forms  import  AttendeForm
 from django.shortcuts import render, redirect
-from .models import TickerText
 
 # Create your views here.
 
