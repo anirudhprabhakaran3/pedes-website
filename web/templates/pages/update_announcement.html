@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Update Ticker</title>
+</head>
+<body>
+    <h1>Update Ticker Text</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+    </form>
+    <a href="{% url 'home' %}">Back to home</a>
+</body>
+</html>
