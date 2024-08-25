@@ -75,6 +75,10 @@ def student_travel_award(request):
 def travel_apply(request):
     return render(request, "pages/travel_apply.html")
 
+
+def camera_paper(request):
+    return render(request, "pages/camera_paper.html")
+
 # IFRAME_MAPPINGS = {
 #     ('IN', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
 #     ('IN', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
