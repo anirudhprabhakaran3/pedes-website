@@ -22,5 +22,5 @@ urlpatterns = [
     path("reg_portal/", reg_portal, name="reg_portal"),
     path("travel_apply/",travel_apply, name="travel_apply"),
     path("camera_paper/",camera_paper, name="camera_paper"),
-    path("update_announcement/",update_announcement, name="update_announcement"),
+    # path("update_announcement/",update_announcement, name="update_announcement"),
 ]
