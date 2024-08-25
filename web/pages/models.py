@@ -28,3 +28,10 @@ class Attende(models.Model):
     
     def __str__(self):
         return f"{self.get_nationality_display()} - {self.get_category_display()}"
+    
+class TickerText(models.Model):
+    text = models.CharField(max_length=255, help_text="Text to display in announcement")
+    is_active = models.BooleanField(default=True, help_text="Whether the announcement is active")
+
+    def __str__(self):
+        return self.text

@@ -141,17 +141,21 @@
    <!-- announcements              
                 
       announcements       -->
-   <!-- <section>
-    <div class="ticker-wrap">
-        <div class="ticker">
-           <div class="ticker_item flex flex-row items-center">
-            <a href="travel_apply">
-                Apply for Student Travel Awards.
-            </a>
-        </div>
-        </div>
-    </div>
-   </section> -->
+   <section>
+    
+                {% if ticker_text and ticker_text.is_active %}
+                <div class="ticker-wrap">
+                    <div class="ticker">
+                        <div class="ticker_item flex flex-row items-center">
+                            {{ ticker_text.text }}
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+   
+                {% endif %}
+        
+   </section>
    
    <!-- <section>
     <div class="flex justify-center bg-orange-100 border border-orange-400 text-orange-700 px-4 py-3 rounded relative" role="alert">
