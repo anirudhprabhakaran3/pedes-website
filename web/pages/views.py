@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from pages.models import Announcement
-from .forms  import  AttendeForm, TickerTextForm
+from .forms  import  AttendeForm
 from django.shortcuts import render, redirect
-from .models import TickerText
 
 # Create your views here.
 
@@ -14,8 +13,9 @@ def home(request):
     # args = {
     #     "announcements": announcements
     # }
-    ticker_text = TickerText.objects.first()
-    return render(request, "pages/home.html",  {'ticker_text': ticker_text})
+    # ticker_text = TickerText.objects.first()
+    # return render(request, "pages/home.html",  {'ticker_text': ticker_text})
+    return render(request,"pages/home.html")
 
 
 # committee page
@@ -113,20 +113,20 @@ def reg_portal(request):
     return render(request,"pages/reg_portal.html")
     #  return render(request, "pages/reg_portal.html", {'form': form, 'form_submitted': form_submitted, 'iframe_url': iframe_url })
 
-def update_announcement(request):
-    if request.method == 'POST':
-        form = TickerTextForm(request.POST)
-        if form.is_valid():
-            # Retrieve or create the TickerText record with pk=1
-            ticker, created = TickerText.objects.get_or_create(pk=1)
-            ticker.text = form.cleaned_data['text']
-            ticker.is_active = form.cleaned_data['is_active']
-            ticker.save()
-            # Redirect to the home page after updating
-            return redirect('home')
-    else:
-        form = TickerTextForm()
+# def update_announcement(request):
+#     if request.method == 'POST':
+#         form = TickerTextForm(request.POST)
+#         if form.is_valid():
+#             # Retrieve or create the TickerText record with pk=1
+#             ticker, created = TickerText.objects.get_or_create(pk=1)
+#             ticker.text = form.cleaned_data['text']
+#             ticker.is_active = form.cleaned_data['is_active']
+#             ticker.save()
+#             # Redirect to the home page after updating
+#             return redirect('home')
+#     else:
+#         form = TickerTextForm()
     
-    # Render the form if not a POST request
-    ticker_text = TickerText.objects.first()  # Get the ticker text record
-    return render(request, "pages/update_announcement.html", {'form': form, 'ticker_text': ticker_text})
+#     # Render the form if not a POST request
+#     ticker_text = TickerText.objects.first()  # Get the ticker text record
+#     return render(request, "pages/update_announcement.html", {'form': form, 'ticker_text': ticker_text})
