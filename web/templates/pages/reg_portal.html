@@ -32,6 +32,8 @@
     </select>
 </div>
 
+<div id="notification-container" class="mb-4"></div>
+
 <div class="mt-6" id="iframe-container" style="display: none;">
     <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
         <iframe id="dynamic-iframe" src="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
@@ -40,16 +42,17 @@
 
     <script>
 const links = [
-    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724870756", // Link 1
+    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958244", // Link 1
     "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871084", // Link 2
-    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871189", // Link 3
+    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958357", // Link 3
     "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871274", // Link 4
-    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871363", // Link 5
+    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958396", // Link 5
     "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871387", // Link 6
-    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871402", // Link 7
+    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958420", // Link 7
     "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871421"  // Link 8
 ];
 
+// logic for checking the user inputs
 function checkSelections() {
     const firstInput = parseInt(document.getElementById('first-input').value); // A
     const secondInput = parseInt(document.getElementById('second-input').value); // B
@@ -57,9 +60,22 @@ function checkSelections() {
 
     const iframeContainer = document.getElementById('iframe-container');
     const dynamicIframe = document.getElementById('dynamic-iframe');
+    const notificationContainer = document.getElementById('notification-container');
+
+            // Check if the first input is 1 and show the notification
+            if (firstInput === 1) {
+                notificationContainer.innerHTML = `
+                    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4" role="alert">
+                        <p class="font-bold">Notice</p>
+                        <p>Please select USD as your currency.</p>
+                    </div>`;
+            } else {
+                notificationContainer.innerHTML = ''; // Clear the notification if the first input is not 1
+            }
+
     // console.log('Selections:', firstInput, secondInput, thirdInput);
     // Check if all inputs are selected
-    if (firstInput !== null && secondInput !== null && thirdInput !== null) {
+    if (!isNaN(firstInput) && !isNaN(secondInput) && !isNaN(thirdInput)) {
         // Calculate the numerical equivalent
         const value = (firstInput * 4) + (secondInput * 2) + (thirdInput * 1);
         // console.log(value);
