@@ -112,7 +112,7 @@
         -webkit-animation-name: ticker;
         animation-name: ticker;
         -webkit-animation-duration: 10s;
-        animation-duration: 10s;
+        animation-duration: 15s;
     }
 
     /* Ticker item styles */
@@ -136,11 +136,22 @@
             </div>
    </section> -->
 
+  
 
-
-   <!-- announcements              
+   <!-- announcements   
+     <!-- <section> -->
+    <section>
+    <div class="ticker-wrap">
+        <div class="ticker">
+           <div class="ticker_item flex flex-row items-center">
+            <a href="reg_portal">
+                Registration and Camera-Ready Paper Submission Now Open!
+            </a>
+        </div>
+        </div>
+    </div>
+   </section>           
                 
-      announcements       -->
    <section>
     
                 {% if ticker_text and ticker_text.is_active %}
@@ -157,13 +168,13 @@
         
    </section>
    
-   <!-- <section>
-    <div class="flex justify-center bg-orange-100 border border-orange-400 text-orange-700 px-4 py-3 rounded relative" role="alert">
-        <span class="block sm:inline">Click <a href="travel_apply" class="text-orange-800 font-semibold underline">here</a> to go to the Student Travel Award page.</span>
+    <!-- <section>
+    <div class="flex justify-center bg-orange-100 border border-orange-400 text-orange-700 px-4 py-3 rounded relative" role="alert"> -->
+        <!-- <span class="block sm:inline">Click <a href="travel_apply" class="text-orange-800 font-semibold underline">here</a> to go to the Student Travel Award page.</span>
         <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
         </span>
     </div>
-   </section> -->
+   </section>  --> 
 
     <section class="bg-white">
         
@@ -351,17 +362,27 @@
                     National Institute of Technology Karnataka, Surathkal, India
                 </p>
 
-                <a href="{% static 'pdf/Brochure.pdf' %}" target="_blank" class="bg-blue-500 text-white py-2 px-4 rounded">Brochure</a>
+                <!-- <a href="{% static 'pdf/Brochure.pdf' %}" target="_blank" class="bg-blue-500 text-white py-2 px-4 rounded">Brochure</a> -->
                 <div class="flex flex-col space-y-4 mt-4">
                     <!-- Brochure Button -->
-                    <!-- <a href="{% static 'pdf/Brochure.pdf' %}" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white py-2  px-4 rounded text-center">Brochure</a> -->
-                    
+                    <a href="{% static 'pdf/Brochure.pdf' %}" target="_blank" 
+                       class="inline-block bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-full text-center shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                       Brochure
+                    </a>
+                    <a href="reg_portal/" target="_blank" 
+                    class="inline-block bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold py-3 px-6 rounded-full text-center shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                    Registration
+                    </a>
                     <!-- Camera Ready Paper Submission Button -->
-                    <!-- <a href="call_for_papers" target="_blank" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded text-center">Camera Ready Paper Submission</a> -->
+                    <a href="call_for_papers" target="_blank" 
+                       class="inline-block bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold py-3 px-6 rounded-full text-center shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                       Camera Ready Paper Submission
+                    </a>
                     
                     <!-- Register Button -->
-                    <!-- <a href="reg_portal/" target="_blank" class="bg-teal-600 hover:bg-teal-700 text-white py-2 px-4 rounded text-center">Registration</a> -->
+                   
                 </div>
+                
             </div>
 
             <button type="button"
@@ -616,11 +637,11 @@
             </ol>
         </div>
     </section>
-    <section class="flex items-center justify-center py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+    <!-- <section class="flex items-center justify-center py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
         <a href="call_for_papers" button type="button" class="px-5 py-3 text-base font-medium text-center inline-flex items-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Submit digest
         </a>
-    </section>
+    </section> -->
     <section>
         <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 prose max-w-none">
             <h1 id="countdown" class="text-center text-4xl"></h1>
