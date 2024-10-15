@@ -29,7 +29,10 @@
         <option value="" selected disabled>Select Third...</option>
         <option value="0">Author</option>
         <option value="1">Attendee</option>
+        <option value="2">Tutorial</option>
     </select>
+
+    
 </div>
 
 
@@ -48,14 +51,18 @@
 
     <script>
 const links = [
-    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958244", // Link 1
-    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871084", // Link 2
-    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958357", // Link 3
-    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871274", // Link 4
-    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958396", // Link 5
-    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871387", // Link 6
-    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958420", // Link 7
-    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871421"  // Link 8
+    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958244", // Link 1,Indian ieee author
+    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871084", // Link 2,Indian ieee non author
+    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1728911424", //Indian Ieee tutorial
+    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958357", // Link 3,Indian non-iee author
+    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871274", // Link 4,Indian non-ieee attendee 
+    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1728911506", //Indian Non Ieee tutorial
+    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958396", // Link 5,foriegn Iee author
+    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871387", // Link 6,Foreign iee attendee
+    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1728911556", //Foriegn Ieee Tutorial
+    "https://www.yepdesk.com/buy-tickets/66d0aff2c9e77c00019eff26/private/44sgv5dh0r/category/1724958420", // Link 7,Foreign Non Ieee Author
+    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1724871421" , // Link 8 , Foriegn non Iee attendee
+    "https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h/category/1728911579" //Foriegn Non Ieee tutorial
 ];
 
 // logic for checking the user inputs
@@ -69,7 +76,7 @@ function checkSelections() {
     const notificationContainer = document.getElementById('notification-container');
 
             // Check if the first input is 1 and show the notification
-            if (firstInput === 1 && (secondInput===1 ||secondInput===0) && (thirdInput===0 ||thirdInput===1)) {
+            if (firstInput === 1 && (secondInput===1 ||secondInput===0) && (thirdInput===0 ||(thirdInput===1 ||thirdInput===2))) {
                 notificationContainer.innerHTML = `
                 <div class="bg-blue-100 border-l-8 border-blue-500 text-blue-700 p-4 sm:p-6 md:p-8 rounded-lg shadow-lg mt-4 mb-4 mx-4 sm:mx-6 md:mx-8 max-w-full">
                     <p class="text-base sm:text-lg md:text-xl font-extrabold">Important Notice</p>
@@ -85,7 +92,7 @@ function checkSelections() {
     // Check if all inputs are selected
     if (!isNaN(firstInput) && !isNaN(secondInput) && !isNaN(thirdInput)) {
         // Calculate the numerical equivalent
-        const value = (firstInput * 4) + (secondInput * 2) + (thirdInput * 1);
+        const value = (firstInput * 6) + (secondInput * 3) + (thirdInput * 1);
         // console.log(value);
         // Show the iframe based on the calculated value
         if (value >= 0 && value < links.length) {
