@@ -82,6 +82,10 @@ def travel_apply(request):
 def camera_paper(request):
     return render(request, "pages/camera_paper.html")
 
+
+def travel_moe(request):
+    return render(request, "pages/travel_moe.html")
+
 # IFRAME_MAPPINGS = {
 #     ('IN', 'AUTHOR'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
 #     ('IN', 'STUDENT'): 'https://www.yepdesk.com/buy-tickets/66c4a47bc9e77c0001602f0b/private/n2tejimf0h',
