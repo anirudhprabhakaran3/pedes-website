@@ -5,42 +5,40 @@
 {% endblock %}
 
 {% block content %}
-<section class="bg-gray-100 py-12">
-    <div class="container mx-auto px-4 lg:px-20">
+<section class="bg-gray-100 py-8">
+    <div class="container mx-auto ">
         <!-- Section Heading -->
         <div class="text-center mb-12">
             <h2 class="text-4xl lg:text-6xl font-extrabold text-blue-800 mb-6 font-helvetica">
                 Session Plans
             </h2>
-            <p class="text-lg text-gray-600">Explore the detailed session plans and presentation downloads below.</p>
         </div>
 
-        <!-- Image Section -->
-        <div class="flex justify-center">
-            <img class="h-auto rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" src="{% static 'img/session_plan.jpg' %}" alt="Session Plan Image">
+       <!-- Image Section -->
+        <div class="flex justify-center mb-8">
+            <img class="h-auto max-w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" src="{% static 'img/Event_pic2.jpg' %}" alt="Session Plan Image">
         </div>
+        <div class="flex justify-center mb-8 mt-4">
+            <img class="h-auto max-w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" src="{% static 'img/Event_pic1.jpg' %}" alt="Session Plan Image">
+        </div>
+
+       
 
         <!-- Download Links Section -->
         <div class="mt-10 text-center">
             <!-- Oral Presentation -->
             <div class="mb-8">
-                <p class="text-xl font-helvetica text-gray-700 mb-4">
-                    <span class="font-bold text-blue-800">You can download and view the Oral Presentation from below:</span>
-                </p>
                 <a href="{% static 'pdf/oral_pres.pdf' %}" target="_blank"
                     class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300">
-                    📄 Download Oral Presentation
+                    📄  Oral Presentation
                 </a>
             </div>
 
             <!-- Poster Presentation -->
             <div class="mb-8">
-                <p class="text-xl font-helvetica text-gray-700 mb-4">
-                    <span class="font-bold text-blue-800">You can download and view the Poster Presentation from below:</span>
-                </p>
                 <a href="{% static 'pdf/poster_pres.pdf' %}" target="_blank"
                     class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300">
-                    📄 Download Poster Presentation
+                    📄  Poster Presentation
                 </a>
             </div>
         </div>
